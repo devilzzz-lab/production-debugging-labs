@@ -1,0 +1,56 @@
+# Error Version
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: crashloop-app
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: crashloop
+#   template:
+#     metadata:
+#       labels:
+#         app: crashloop
+#     spec:
+#       containers:
+#       - name: app
+#         image: busybox
+#         command: ["sh", "-c", "echo $DB_HOST && sleep 5"]
+#         resources:
+#           requests:
+#             memory: "64Mi"
+#             cpu: "100m"
+#           limits:
+#             memory: "128Mi"
+#             cpu: "500m"
+
+# Fixed Version
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crashloop-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crashloop
+  template:
+    metadata:
+      labels:
+        app: crashloop
+    spec:
+      containers:
+      - name: app
+        image: busybox
+        command: ["sh", "-c", "echo $DB_HOST && sleep 3600"]
+        env:                                    # Added this!
+        - name: DB_HOST
+          value: "postgres-service"
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"

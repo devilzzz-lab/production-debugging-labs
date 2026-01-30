@@ -28,10 +28,16 @@
 <table border="1" cellpadding="12" cellspacing="0">
     <tr>
         <td>
-            <strong><a href="debug-steps.md">🔍 How to Debug</a></strong>
+            <strong><a href="creation.md">📌 How I Created Issue</a></strong>
+        </td>
+        <td>
+            <strong><a href="debug-steps.md">🔍 How I Debug It</a></strong>
         </td>
     </tr>
     <tr>
+        <td>
+            <strong><a href="fix.md">💭 How i Fixed It</a></strong>
+        </td>
         <td>
             <strong><a href="prevention.md">🛡️ Prevention Next Time</a></strong>
         </td>
