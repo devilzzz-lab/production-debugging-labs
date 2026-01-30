@@ -48,7 +48,7 @@
 
 <p align="center">
     <a href="../../categories/k8s.md">← Back to Kubernetes Issues</a> | 
-    <a href="../../README.html">🏠 Back to Main README</a>
+    <a href="../../README.md">🏠 Back to Main README</a>
 </p>
 
 </body>
