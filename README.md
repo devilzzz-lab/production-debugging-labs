@@ -133,21 +133,15 @@ production-debugging-labs/
 <pre>
 issue-name/
 ├── overview.md          # Problem description and context
-├── logs.txt             # Actual error logs
-├── debug-steps.md       # Investigation process
-├── fix.md               # Solution implementation
+├── debug-steps.md       # How to Fix it process
 ├── prevention.md        # Best practices to avoid recurrence
-└── cheatsheet.md        # Quick reference commands
 </pre>
 
 <p><strong>Example: pod-crashloop/</strong></p>
 <ul>
     <li><strong>overview.md</strong> - What happened, symptoms, impact</li>
-    <li><strong>logs.txt</strong> - Real kubectl logs output</li>
-    <li><strong>debug-steps.md</strong> - How to investigate step-by-step</li>
-    <li><strong>fix.md</strong> - Root cause analysis and solution</li>
+    <li><strong>debug-steps.md</strong> - How to Fix step-by-step</li>
     <li><strong>prevention.md</strong> - Health checks, resource limits, best practices</li>
-    <li><strong>cheatsheet.md</strong> - Quick kubectl commands for this scenario</li>
 </ul>
 
 <hr>

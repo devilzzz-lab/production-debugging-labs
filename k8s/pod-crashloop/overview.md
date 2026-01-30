@@ -15,8 +15,8 @@
 <hr>
 
 <h3>🚨 Issue Summary</h3>
-<p><strong>Issue:</strong> Pod entering CrashLoopBackOff state after deployment</p>
-<p><strong>Environment:</strong> EKS cluster</p>
+<p><strong>Issue:</strong> Pod entering CrashLoopBackOff state after Bad Deployment (Missing ENV)</p>
+<p><strong>Environment:</strong>AKS cluster</p>
 <p><strong>Impact:</strong> Application unavailable</p>
 
 <hr>
@@ -28,46 +28,17 @@
 <table border="1" cellpadding="12" cellspacing="0">
     <tr>
         <td>
-            <strong><a href="cheatsheet.md">📋 Cheatsheet</a></strong>
-        </td>
-        <td>
-            <strong><a href="debug-steps.md">🔍 Debug Steps</a></strong>
+            <strong><a href="debug-steps.md">🔍 How to Debug</a></strong>
         </td>
     </tr>
     <tr>
         <td>
-            <strong><a href="fix.md">✅ Fix</a></strong>
-        </td>
-        <td>
-            <strong><a href="logs.txt">📄 Logs</a></strong>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <strong><a href="overview.md">📖 Overview</a></strong>
-        </td>
-        <td>
-            <strong><a href="prevention.md">🛡️ Prevention</a></strong>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <strong><a href="root-cause.md">🎯 Root Cause</a></strong>
-        </td>
-        <td>
-            <strong><a href="symptoms.md">⚠️ Symptoms</a></strong>
+            <strong><a href="prevention.md">🛡️ Prevention Next Time</a></strong>
         </td>
     </tr>
 </table>
 
 <hr>
-
-<h2>🚀 Quick Actions</h2>
-<pre>
-kubectl get pods
-kubectl describe pod &lt;pod-name&gt;
-kubectl logs &lt;pod-name&gt; --previous
-</pre>
 
 <p align="center">
     <a href="../../categories/k8s.md">← Back to Kubernetes Issues</a> | 
