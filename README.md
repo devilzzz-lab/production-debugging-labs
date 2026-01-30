@@ -42,7 +42,7 @@
             <td>CI/CD</td>
         </tr>
         <tr>
-            <td>Cloud</td>
+            <td>Cloud (AWS & Azure)</td>
         </tr>
         <tr>
             <td>Monitoring</td>
@@ -65,6 +65,7 @@
     <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker">
     <img src="https://img.shields.io/badge/Terraform-7B42BC?logo=terraform&logoColor=white" alt="Terraform">
     <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white" alt="AWS">
+    <img src="https://img.shields.io/badge/Azure-0078D4?logo=microsoftazure&logoColor=white" alt="Azure">
     <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white" alt="GitHub Actions">
     <img src="https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white" alt="Prometheus">
     <img src="https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white" alt="Grafana">
@@ -107,13 +108,23 @@ production-debugging-labs/
 │   ├── image-pull-backoff/
 │   ├── node-notready/
 │   ├── oom-killed/
-│   └── dns-failure/
+│   ├── dns-failure/
+│   ├── pvc-pending/
+│   └── service-unreachable/
 │
 ├── cloud/
-│   ├── ec2-high-cpu/
-│   ├── alb-503/
-│   ├── rds-latency/
-│   └── disk-full/
+│   │
+│   ├── aws/
+│   │   ├── ec2-high-cpu/
+│   │   ├── alb-503/
+│   │   ├── rds-latency/
+│   │   └── disk-full/
+│   │
+│   └── azure/
+│       ├── vm-high-cpu/
+│       ├── appgw-502/
+│       ├── sql-latency/
+│       └── storage-full/
 │
 ├── cicd/
 │   ├── pipeline-fail/
@@ -128,12 +139,6 @@ production-debugging-labs/
 │   └── dashboard-broken/
 │
 ├── sre/
-│   ├── incident-001/
-│   │   ├── timeline.md
-│   │   ├── impact.md
-│   │   ├── rca.md
-│   │   └── action-items.md
-│   │
 │   ├── slo-breach/
 │   ├── latency-spike/
 │   └── traffic-surge/
@@ -141,10 +146,27 @@ production-debugging-labs/
 ├── runbooks/
 │   ├── k8s.md
 │   ├── aws.md
+│   ├── azure.md
 │   ├── cicd.md
 │   └── oncall.md
 │
 └── README.md
+</pre>
+
+<hr>
+
+<h2>📦 For Every Issue, I'll Build a Mini-Book</h2>
+
+<p><strong>Example:</strong></p>
+
+<pre>
+pod-crashloop/
+├── overview.md
+├── logs.txt
+├── debug-steps.md
+├── fix.md
+├── prevention.md
+└── cheatsheet.md
 </pre>
 
 <hr>
@@ -154,8 +176,8 @@ production-debugging-labs/
 <p>Questions? Suggestions? Reach out:</p>
 
 <ul>
-    <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile">Your Profile</a></li>
-    <li><strong>Email:</strong> your.email@example.com</li>
+    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sriramg-s">Sriram G</a></li>
+    <li><strong>Email:</strong> srisuji0814@gmail.com</li>
 </ul>
 
 <hr>

@@ -1,0 +1,2 @@
+kubectl logs app-pod-xyz
+Error: Missing ENV variable DB_HOST
