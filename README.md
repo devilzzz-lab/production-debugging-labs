@@ -51,21 +51,20 @@
 
 <h2 id="-categories-covered">🎯 Categories Covered</h2>
 
-<p><em>👆 Click the underlined links below to explore each category</em></p>
+<p><em>👆 Click the links below to explore each category</em></p>
 
-<h3 id="kubernetes">🔗 <a href="categories/k8s.md" style="text-decoration: underline;">Kubernetes</a></h3>
-<h3 id="cicd">🔗 <a href="categories/cicd.md" style="text-decoration: underline;">CI/CD</a></h3>
-<h3 id="cloud">🔗 <a href="categories/cloud.md" style="text-decoration: underline;">Cloud (AWS & Azure)</a></h3>
-<h3 id="monitoring">🔗 <a href="categories/monitoring.md" style="text-decoration: underline;">Monitoring</a></h3>
-<h3 id="automation">🔗 <a href="categories/automation.md" style="text-decoration: underline;">Automation</a></h3>
-<h3 id="sre">🔗 <a href="categories/sre.md" style="text-decoration: underline;">SRE</a></h3>
-
+<h3 id="kubernetes">🔗 <u><a href="categories/k8s.md">Kubernetes</a></u></h3>
+<h3 id="cicd">🔗 <u><a href="categories/cicd.md">CI/CD</a></u></h3>
+<h3 id="cloud">🔗 <u><a href="categories/cloud.md">Cloud (AWS & Azure)</a></u></h3>
+<h3 id="monitoring">🔗 <u><a href="categories/monitoring.md">Monitoring</a></u></h3>
+<h3 id="automation">🔗 <u><a href="categories/automation.md">Automation</a></u></h3>
+<h3 id="sre">🔗 <u><a href="categories/sre.md">SRE</a></u></h3>
 
 
 
 <hr>
 
-<h2 id="-repository-structure">💡 Repository Structure</h2>
+<h2 id="-repository-structure">💡 Base Repository Design Structure</h2>
 
 <pre>
 production-debugging-labs/
