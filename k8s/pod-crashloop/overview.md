@@ -70,7 +70,7 @@ kubectl logs &lt;pod-name&gt; --previous
 </pre>
 
 <p align="center">
-    <a href="../categories/k8s.html">← Back to Kubernetes Issues</a> | 
+    <a href="../../categories/k8s.md">← Back to Kubernetes Issues</a> | 
     <a href="../../README.html">🏠 Back to Main README</a>
 </p>
 
