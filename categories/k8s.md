@@ -18,7 +18,7 @@
 
 <p><em>👆 Click underlined issue names to jump to Full Guide</em></p>
 
-<h3><a href="k8s/pod-crashloop/overview.md"> Pod CrashLoopBackOff</a> → Full Guide</h3>
+<h3><a href="/k8s/pod-crashloop/overview.md"> Pod CrashLoopBackOff</a> → Full Guide</h3>
 <h3><a href="k8s/image-pull-backoff/overview.md"> ImagePullBackOff Errors</a> → Full Guide</h3>
 <h3><a href="k8s/node-notready/overview.md"> Node NotReady Issues</a> → Full Guide</h3>
 <h3><a href="k8s/oom-killed/overview.md"> OOMKilled Containers</a> → Full Guide</h3>
