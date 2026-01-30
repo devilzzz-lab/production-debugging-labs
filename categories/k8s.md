@@ -1,4 +1,4 @@
-<h3>Pod CrashLoopBackOff <a href="k8s/pod-crashloop/overview.md">Full Guide</a></h3>
+<h3>Pod CrashLoopBackOff <a href="/k8s/pod-crashloop/overview.md">Full Guide</a></h3>
 <h3>ImagePullBackOff Errors <a href="k8s/image-pull-backoff/overview.md">Full Guide</a></h3>
 <h3>Node NotReady Issues <a href="k8s/node-notready/overview.md">Full Guide</a></h3>
 <h3>OOMKilled Containers <a href="k8s/oom-killed/overview.md">Full Guide</a></h3>
