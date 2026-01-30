@@ -6,8 +6,10 @@
 </head>
 <body>
 
-<h1 align="center">🚀 DevOps Lab</h1>
+<h1 align="center">My DevOps Lab</h1>
 <h3 align="center">50 Real Production Issues & Solutions</h3>
+
+<p align="center">I'm going to cover 50 Real Production Issues & giving Solutions</p>
 
 <hr>
 
@@ -24,39 +26,32 @@
 
 <hr>
 
-<h2>🎯 Issues Gonna Covering</h2>
+<h2>🎯 Going to Cover These Categories</h2>
 
 <table>
     <thead>
         <tr>
             <th>Category</th>
-            <th>Difficulty</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>K8s</td>
-            <td>⭐⭐</td>
         </tr>
         <tr>
             <td>CI/CD</td>
-            <td>⭐⭐⭐</td>
         </tr>
         <tr>
             <td>Cloud</td>
-            <td>⭐⭐⭐⭐</td>
         </tr>
-         <tr>
+        <tr>
             <td>Monitoring</td>
-            <td>⭐⭐⭐⭐</td>
         </tr>
-         <tr>
+        <tr>
             <td>Automation</td>
-            <td>⭐⭐⭐⭐</td>
         </tr>
-         <tr>
+        <tr>
             <td>SRE</td>
-            <td>⭐⭐⭐⭐</td>
         </tr>
     </tbody>
 </table>
@@ -151,21 +146,6 @@ production-debugging-labs/
 │
 └── README.md
 </pre>
-
-<hr>
-
-<h2>🤝 Contributing</h2>
-
-<p>Found a production issue that others could learn from? Contributions are welcome!</p>
-
-<ol>
-    <li>Fork the repository</li>
-    <li>Create your issue branch (<code>git checkout -b issue/amazing-problem</code>)</li>
-    <li>Follow the issue template structure</li>
-    <li>Commit your changes (<code>git commit -m 'Add Issue: Amazing Problem'</code>)</li>
-    <li>Push to the branch (<code>git push origin issue/amazing-problem</code>)</li>
-    <li>Open a Pull Request</li>
-</ol>
 
 <hr>
 
