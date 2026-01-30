@@ -51,66 +51,12 @@
 
 <h2 id="-categories-covered">🎯 Categories Covered</h2>
 
-<h3 id="kubernetes">🔷 Kubernetes</h3>
-<ul>
-    <li>Pod CrashLoopBackOff</li>
-    <li>ImagePullBackOff errors</li>
-    <li>Node NotReady issues</li>
-    <li>OOMKilled containers</li>
-    <li>DNS resolution failures</li>
-    <li>PVC Pending state</li>
-    <li>Service unreachable</li>
-</ul>
-
-<h3 id="cicd">🔷 CI/CD</h3>
-<ul>
-    <li>Pipeline failures</li>
-    <li>Artifact missing errors</li>
-    <li>Runner/Agent down</li>
-    <li>Secret expiration issues</li>
-    <li>Deployment rollback scenarios</li>
-</ul>
-
-<h3 id="cloud">🔷 Cloud (AWS & Azure)</h3>
-<p><strong>AWS:</strong></p>
-<ul>
-    <li>EC2 high CPU usage</li>
-    <li>ALB 503 errors</li>
-    <li>RDS latency spikes</li>
-    <li>Disk full issues</li>
-</ul>
-
-<p><strong>Azure:</strong></p>
-<ul>
-    <li>VM high CPU usage</li>
-    <li>Application Gateway 502 errors</li>
-    <li>SQL Database latency</li>
-    <li>Storage account issues</li>
-</ul>
-
-<h3 id="monitoring">🔷 Monitoring</h3>
-<ul>
-    <li>Alert fatigue management</li>
-    <li>Missing metrics debugging</li>
-    <li>False positive alerts</li>
-    <li>Dashboard configuration issues</li>
-</ul>
-
-<h3 id="automation">🔷 Automation</h3>
-<ul>
-    <li>Terraform state conflicts</li>
-    <li>Ansible playbook failures</li>
-    <li>Script debugging</li>
-    <li>Configuration drift</li>
-</ul>
-
-<h3 id="sre">🔷 SRE</h3>
-<ul>
-    <li>SLO breach incidents</li>
-    <li>Latency spike investigation</li>
-    <li>Traffic surge handling</li>
-    <li>Capacity planning</li>
-</ul>
+<h3 id="kubernetes">🔷 <a href="categories/k8s.md">Kubernetes</a></h3>
+<h3 id="cicd">🔷 <a href="categories/cicd.md">CI/CD</a></h3>
+<h3 id="cloud">🔷 <a href="categories/cloud.md">Cloud (AWS & Azure)</a></h3>
+<h3 id="monitoring">🔷 <a href="categories/monitoring.md">Monitoring</a></h3>
+<h3 id="automation">🔷 <a href="categories/automation.md">Automation</a></h3>
+<h3 id="sre">🔷 <a href="categories/sre.md">SRE</a></h3>
 
 <hr>
 
