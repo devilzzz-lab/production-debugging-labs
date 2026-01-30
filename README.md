@@ -51,12 +51,12 @@
 
 <h2 id="-categories-covered">🎯 Categories Covered</h2>
 
-<h3 id="kubernetes">🔷 <a href="categories/k8s.md">Kubernetes</a></h3>
-<h3 id="cicd">🔷 <a href="categories/cicd.md">CI/CD</a></h3>
-<h3 id="cloud">🔷 <a href="categories/cloud.md">Cloud (AWS & Azure)</a></h3>
-<h3 id="monitoring">🔷 <a href="categories/monitoring.md">Monitoring</a></h3>
-<h3 id="automation">🔷 <a href="categories/automation.md">Automation</a></h3>
-<h3 id="sre">🔷 <a href="categories/sre.md">SRE</a></h3>
+<h3 id="kubernetes">🔷 **[Kubernetes](categories/k8s.md)**</h3>
+<h3 id="cicd">🔷 **[CI/CD](categories/cicd.md)**</h3>
+<h3 id="cloud">🔷 **[Cloud (AWS & Azure)](categories/cloud.md)**</h3>
+<h3 id="monitoring">🔷 **[Monitoring](categories/monitoring.md)**</h3>
+<h3 id="automation">🔷 **[Automation](categories/automation.md)**</h3>
+<h3 id="sre">🔷 **[SRE](categories/sre.md)**</h3>
 
 <hr>
 
@@ -199,20 +199,6 @@ issue-name/
     <li><strong>Email:</strong> srisuji0814@gmail.com</li>
     <li><strong>GitHub:</strong> <a href="https://github.com/devilzzz-lab">@devilzzz-lab</a></li>
 </ul>
-
-<hr>
-
-<h2>🤝 Contribute</h2>
-
-<p>Have a production issue to share? Contributions are welcome!</p>
-
-<ol>
-    <li>Fork the repository</li>
-    <li>Create a new issue folder following the structure</li>
-    <li>Submit a pull request</li>
-</ol>
-
-<p>See <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> for detailed guidelines.</p>
 
 <hr>
 
