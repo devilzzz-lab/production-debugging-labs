@@ -3,30 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Bible - 50 Production Issues</title>
 </head>
 <body>
 
-<h1 align="center">🚀 DevOps Bible</h1>
+<h1 align="center">🚀 DevOps Lab</h1>
 <h3 align="center">50 Real Production Issues & Solutions</h3>
-
-<p align="center">
-    <strong>After 50 issues → You'll have your own DevOps Bible 😎📘</strong>
-</p>
-
-<hr>
-
-<h2>❤️ Why This Will Change Your Career</h2>
-
-<p><strong>After 6 months:</strong></p>
-
-<p>You won't say:<br>
-<em>"I know Kubernetes"</em></p>
-
-<p>You'll say:<br>
-<strong>"I've debugged 40+ production issues."</strong></p>
-
-<p align="center">Interviewers: 😳🔥</p>
 
 <hr>
 
@@ -43,47 +24,39 @@
 
 <hr>
 
-<h2>🎯 Issues Covered</h2>
+<h2>🎯 Issues Gonna Covering</h2>
 
 <table>
     <thead>
         <tr>
-            <th>Issue #</th>
             <th>Category</th>
-            <th>Problem</th>
             <th>Difficulty</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>001</td>
-            <td>Kubernetes</td>
-            <td>Pod stuck in CrashLoopBackOff</td>
+            <td>K8s</td>
             <td>⭐⭐</td>
         </tr>
         <tr>
-            <td>002</td>
             <td>CI/CD</td>
-            <td>Pipeline timeout on large builds</td>
             <td>⭐⭐⭐</td>
         </tr>
         <tr>
-            <td>003</td>
-            <td>Networking</td>
-            <td>Service mesh routing failures</td>
+            <td>Cloud</td>
             <td>⭐⭐⭐⭐</td>
         </tr>
-        <tr>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
+         <tr>
+            <td>Monitoring</td>
+            <td>⭐⭐⭐⭐</td>
         </tr>
-        <tr>
-            <td>050</td>
-            <td>Disaster Recovery</td>
-            <td>Multi-region failover execution</td>
-            <td>⭐⭐⭐⭐⭐</td>
+         <tr>
+            <td>Automation</td>
+            <td>⭐⭐⭐⭐</td>
+        </tr>
+         <tr>
+            <td>SRE</td>
+            <td>⭐⭐⭐⭐</td>
         </tr>
     </tbody>
 </table>
@@ -132,52 +105,52 @@
 <h2>💡 Structure of Each Issue</h2>
 
 <pre>
-📁 Issue-001-Pod-CrashLoopBackOff/
-├── README.md
-│   ├── Problem Description
-│   ├── Symptoms
-│   ├── Initial Investigation
-│   ├── Root Cause
-│   ├── Solution
-│   ├── Prevention
-│   └── Key Learnings
-├── manifests/
-│   └── broken-deployment.yaml
-└── solution/
-    └── fixed-deployment.yaml
+production-debugging-labs/
+│
+├── k8s/
+│   ├── pod-crashloop/
+│   ├── image-pull-backoff/
+│   ├── node-notready/
+│   ├── oom-killed/
+│   └── dns-failure/
+│
+├── cloud/
+│   ├── ec2-high-cpu/
+│   ├── alb-503/
+│   ├── rds-latency/
+│   └── disk-full/
+│
+├── cicd/
+│   ├── pipeline-fail/
+│   ├── artifact-missing/
+│   ├── runner-down/
+│   └── secret-expired/
+│
+├── monitoring/
+│   ├── alert-fatigue/
+│   ├── missing-metrics/
+│   ├── false-alerts/
+│   └── dashboard-broken/
+│
+├── sre/
+│   ├── incident-001/
+│   │   ├── timeline.md
+│   │   ├── impact.md
+│   │   ├── rca.md
+│   │   └── action-items.md
+│   │
+│   ├── slo-breach/
+│   ├── latency-spike/
+│   └── traffic-surge/
+│
+├── runbooks/
+│   ├── k8s.md
+│   ├── aws.md
+│   ├── cicd.md
+│   └── oncall.md
+│
+└── README.md
 </pre>
-
-<hr>
-
-<h2>🚀 Getting Started</h2>
-
-<pre>
-# Clone the repository
-git clone https://github.com/yourusername/devops-bible.git
-
-# Navigate to an issue
-cd devops-bible/issues/001-pod-crashloopbackoff
-
-# Read the problem
-cat README.md
-
-# Try the broken configuration (if applicable)
-kubectl apply -f manifests/
-</pre>
-
-<hr>
-
-<h2>📊 Progress Tracker</h2>
-
-<p>Track your learning journey:</p>
-
-<ul>
-    <li>[ ] Issues 1-10: Kubernetes Basics</li>
-    <li>[ ] Issues 11-20: CI/CD Pipelines</li>
-    <li>[ ] Issues 21-30: Monitoring & Logging</li>
-    <li>[ ] Issues 31-40: Security & Networking</li>
-    <li>[ ] Issues 41-50: Advanced Scenarios</li>
-</ul>
 
 <hr>
 
@@ -196,24 +169,11 @@ kubectl apply -f manifests/
 
 <hr>
 
-<h2>📝 License</h2>
-
-<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
-
-<hr>
-
-<h2>⭐ Show Your Support</h2>
-
-<p>If this repository helped you land a job, debug a critical issue, or level up your DevOps skills, give it a star! ⭐</p>
-
-<hr>
-
 <h2>📬 Contact</h2>
 
 <p>Questions? Suggestions? Reach out:</p>
 
 <ul>
-    <li><strong>Twitter:</strong> <a href="https://twitter.com/yourusername">@yourusername</a></li>
     <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile">Your Profile</a></li>
     <li><strong>Email:</strong> your.email@example.com</li>
 </ul>
@@ -221,7 +181,7 @@ kubectl apply -f manifests/
 <hr>
 
 <p align="center">
-    <strong>Made with ❤️ by DevOps Engineers, for DevOps Engineers</strong>
+    <strong>Made for DevOps Engineers</strong>
 </p>
 
 <p align="center">
