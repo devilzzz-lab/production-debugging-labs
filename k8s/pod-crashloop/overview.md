@@ -38,9 +38,6 @@
         <td>
             <strong><a href="fix.md">💭 How i Fixed It</a></strong>
         </td>
-        <td>
-            <strong><a href="prevention.md">🛡️ Prevention Next Time</a></strong>
-        </td>
     </tr>
 </table>
 

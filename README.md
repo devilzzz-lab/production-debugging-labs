@@ -135,7 +135,6 @@ issue-name/
 ├── overview.md          # Problem description and context
 ├── debug-steps.md       # How to Debug it process
 ├── fix.md               # Solution implementation
-├── prevention.md        # Best practices to avoid recurrence
 </pre>
 
 <p><strong>Example: pod-crashloop/</strong></p>
@@ -143,7 +142,6 @@ issue-name/
     <li><strong>overview.md</strong> - What happened, symptoms, impact</li>
     <li><strong>debug-steps.md</strong> - How to Fix step-by-step</li>
     <li><strong>fix.md</strong> - Root cause analysis and solution</li>
-    <li><strong>prevention.md</strong> - Health checks, resource limits, best practices</li>
 </ul>
 
 <hr>
