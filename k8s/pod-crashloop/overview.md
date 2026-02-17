@@ -16,7 +16,6 @@
 
 <h3>🚨 Issue Summary</h3>
 <p><strong>Issue:</strong> Pod entering CrashLoopBackOff state after Bad Deployment (Missing ENV)</p>
-<p><strong>Environment:</strong>AKS cluster</p>
 <p><strong>Impact:</strong> Application unavailable</p>
 
 <hr>

@@ -14,6 +14,8 @@
 
 <hr>
 
+<h3><a href="/k8s/aks-cluster-setup/setup.md"> Azure Kubernetes Cluster Setup</a> → Full Guide</h3>
+
 <h2>📋 Issues Covered</h2>
 
 <p><em>👆 Click underlined issue names to jump to Full Guide</em></p>
