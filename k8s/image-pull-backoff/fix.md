@@ -12,7 +12,7 @@
 
 <h2>1️⃣ STEP 1: Edit Deployment</h2>
 
-<pre>sujithg@Sujiths-MacBook-Pro manifest % kubectl edit deployment imagepull-error</pre>
+<pre>manifest % kubectl edit deployment imagepull-error</pre>
 
 <p><strong>Change this:</strong></p>
 <pre>image: nginx:wrongtag</pre>
