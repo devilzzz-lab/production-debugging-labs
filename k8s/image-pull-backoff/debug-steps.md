@@ -58,8 +58,8 @@
 <hr>
 
 <p align="center">
-    <a href="index.html">← Back to ImagePullBackOff</a> | 
-    <a href="../../categories/k8s.html">🏠 Kubernetes Issues</a>
+    <a href="overview.md">← Back to ImagePullBackOff</a> | 
+    <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
 </p>
 
 </body>

@@ -29,18 +29,15 @@
 <table border="1" cellpadding="12" cellspacing="0">
     <tr>
         <td>
-            <strong><a href="creation.html">📌 How I Created Issue</a></strong>
+            <strong><a href="creation.md">📌 How I Created Issue</a></strong>
         </td>
         <td>
-            <strong><a href="debug-steps.html">🔍 How I Debug It</a></strong>
+            <strong><a href="debug-steps.md">🔍 How I Debug It</a></strong>
         </td>
     </tr>
     <tr>
         <td>
-            <strong><a href="fix.html">✅ How I Fixed It</a></strong>
-        </td>
-        <td>
-            <strong><a href="prevention.html">🛡️ Prevention</a></strong>
+            <strong><a href="fix.md">✅ How I Fixed It</a></strong>
         </td>
     </tr>
 </table>
@@ -58,8 +55,8 @@ kubectl get events --sort-by='.lastTimestamp'
 <hr>
 
 <p align="center">
-    <a href="../../categories/k8s.html">← Back to Kubernetes Issues</a> | 
-    <a href="../../README.html">🏠 Back to Main README</a>
+    <a href="../../categories/k8s.md">← Back to Kubernetes Issues</a> | 
+    <a href="../../README.md">🏠 Back to Main README</a>
 </p>
 
 </body>
