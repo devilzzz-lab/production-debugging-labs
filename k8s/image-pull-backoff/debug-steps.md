@@ -52,7 +52,7 @@
 <hr>
 
 <h2>✅ Next Steps</h2>
-<p><a href="fix.html">✅ How to Fix The Issue →</a></p>
+<p><a href="fix.md">✅ How to Fix The Issue →</a></p>
 
 <hr>
 
