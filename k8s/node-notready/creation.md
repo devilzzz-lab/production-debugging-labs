@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NodeNotReady - Creation Steps</title>
 </head>
 <body>
 
@@ -13,7 +12,7 @@
 
 <h2>1️⃣ Create KIND Cluster</h2>
 
-<pre><code>kind create cluster --name debug-cluster --config - <<EOF
+<pre><code>kind create cluster --name debug-cluster --config - &lt;&lt;EOF
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
@@ -31,7 +30,7 @@ EOF</code></pre>
  ✓ Installing CNI 🔌 
  ✓ Installing StorageClass 💾 
  ✓ Joining worker nodes 🚜 
-Automated Set to kubectl context to "kind-debug-cluster"</pre>
+Set kubectl context to "kind-debug-cluster"</pre>
 
 <h2>2️⃣ Verify Healthy Cluster</h2>
 <pre>kubectl get nodes
@@ -65,13 +64,13 @@ debug-cluster-worker          <strong>NotReady</strong>   <none>          104s  
 <hr>
 
 <h2>✅ Next Steps</h2>
-<p><a href="debug-steps.md">🔍 How I Debug It →</a></p>
+<p><a href="debug-steps.html">🔍 How I Debug It →</a></p>
 
 <hr>
 
 <p align="center">
-    <a href="overview.md">← Back to NodeNotReady</a> | 
-    <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
+    <a href="index.html">← Back to NodeNotReady</a> | 
+    <a href="../../categories/k8s.html">🏠 Kubernetes Issues</a>
 </p>
 
 </body>
