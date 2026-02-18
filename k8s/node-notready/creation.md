@@ -64,13 +64,13 @@ debug-cluster-worker          <strong>NotReady</strong>   <none>          104s  
 <hr>
 
 <h2>✅ Next Steps</h2>
-<p><a href="debug-steps.html">🔍 How I Debug It →</a></p>
+<p><a href="debug-steps.md">🔍 How I Debug It →</a></p>
 
 <hr>
 
 <p align="center">
-    <a href="index.html">← Back to NodeNotReady</a> | 
-    <a href="../../categories/k8s.html">🏠 Kubernetes Issues</a>
+    <a href="overview.md">← Back to NodeNotReady</a> | 
+    <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
 </p>
 
 </body>
