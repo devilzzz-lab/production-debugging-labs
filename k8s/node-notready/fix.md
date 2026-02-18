@@ -57,7 +57,7 @@ kubectl describe node                 ← Deep dive</pre>
 <hr>
 
 <p align="center">
-    <a href="overview.html">← Back to Node NotReady</a> | 
+    <a href="overview.md">← Back to Node NotReady</a> | 
     <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
 </p>
 
