@@ -32,12 +32,6 @@ debug-cluster-worker2         Ready      <none>          30m   v1.34.0</pre>
 
 <pre>Taints: none  ← ✅ Clean</pre>
 
-<h2>5️⃣ Verify Pods Rescheduled</h2>
-<pre>kubectl get pods -o wide</pre>
-
-<pre>NAME                           READY   STATUS    NODE                          AGE
-app-pod-abc123                 1/1     Running   debug-cluster-worker         2m</pre>
-
 <hr>
 
 <h2>🧠 What Fixed It?</h2>
