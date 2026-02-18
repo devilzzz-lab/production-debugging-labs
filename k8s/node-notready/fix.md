@@ -39,7 +39,7 @@ debug-cluster-worker2         Ready      <none>          30m   v1.34.0</pre>
     <li>❌ <strong>docker stop debug-cluster-worker:</strong> Kubelet stopped heartbeats</li>
     <li>✅ <strong>docker start debug-cluster-worker:</strong> Kubelet resumed reporting</li>
     <li>⏳ <strong>30s grace period:</strong> Control plane verified node health</li>
-    <li>✅ <strong>Node Ready + Taints cleared + Pods rescheduled</strong></li>
+    <li>✅ <strong>Node Ready + Taints cleared</strong></li>
 </ul>
 
 <pre><strong>Key Commands Used:</strong>
