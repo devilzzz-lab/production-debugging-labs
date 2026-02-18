@@ -22,11 +22,11 @@
 
 <h3><a href="/k8s/pod-crashloop/overview.md"> Pod CrashLoopBackOff</a> → Full Guide</h3>
 <h3><a href="/k8s/image-pull-backoff/overview.md"> ImagePullBackOff</a> → Full Guide</h3>
-<h3><a href="k8s/node-notready/overview.md"> Node NotReady</a> → Full Guide</h3>
-<h3><a href="k8s/oom-killed/overview.md"> OOMKilled Containers</a> → Full Guide</h3>
-<h3><a href="k8s/dns-failure/overview.md"> DNS Resolution Failures</a> → Full Guide</h3>
-<h3><a href="k8s/pvc-pending/overview.md"> PVC Pending State</a> → Full Guide</h3>
-<h3><a href="k8s/service-unreachable/overview.md"> Service Unreachable</a> → Full Guide</h3>
+<h3><a href="/k8s/node-notready/overview.md"> Node NotReady</a> → Full Guide</h3>
+<h3><a href="/k8s/oom-killed/overview.md"> OOMKilled Containers</a> → Full Guide</h3>
+<h3><a href="/k8s/dns-failure/overview.md"> DNS Resolution Failures</a> → Full Guide</h3>
+<h3><a href="/k8s/pvc-pending/overview.md"> PVC Pending State</a> → Full Guide</h3>
+<h3><a href="/k8s/service-unreachable/overview.md"> Service Unreachable</a> → Full Guide</h3>
 
 <hr>
 
