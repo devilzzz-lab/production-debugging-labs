@@ -9,7 +9,7 @@
 <h1 align="center">My DevOps Lab</h1>
 <h3 align="center">50 Real Production Issues & Solutions</h3>
 
-<p align="center">Real-world production debugging scenarios with step-by-step solutions for DevOps Engineers</p>
+<p align="center">Real world production debugging scenarios with step by step solutions for DevOps Engineers</p>
 
 <hr>
 
@@ -140,7 +140,7 @@ issue-name/
 <p><strong>Example: pod-crashloop/</strong></p>
 <ul>
     <li><strong>overview.md</strong> - What happened, symptoms, impact</li>
-    <li><strong>debug-steps.md</strong> - How to Fix step-by-step</li>
+    <li><strong>debug-steps.md</strong> - How to Fix step by step</li>
     <li><strong>fix.md</strong> - Root cause analysis and solution</li>
 </ul>
 
@@ -168,7 +168,7 @@ issue-name/
     <li><strong>Browse by Category</strong> - Navigate to folders organized by technology</li>
     <li><strong>Read the Issue</strong> - Each issue contains problem description, symptoms, and context</li>
     <li><strong>Try to Solve</strong> - Attempt the solution before looking at the answer</li>
-    <li><strong>Learn the Solution</strong> - Detailed step-by-step resolution with explanations</li>
+    <li><strong>Learn the Solution</strong> - Detailed step by step resolution with explanations</li>
     <li><strong>Practice</strong> - Recreate the scenario in your own environment</li>
     <li><strong>Contribute</strong> - Share your own production debugging experiences</li>
 </ol>
@@ -180,7 +180,7 @@ issue-name/
 <ul>
     <li>Junior DevOps Engineers looking to level up</li>
     <li>Software Engineers transitioning to DevOps</li>
-    <li>SREs preparing for on-call rotations</li>
+    <li>SREs preparing for on call rotations</li>
     <li>Anyone preparing for DevOps interviews</li>
     <li>Teams building internal knowledge bases</li>
     <li>Platform Engineers debugging infrastructure issues</li>
