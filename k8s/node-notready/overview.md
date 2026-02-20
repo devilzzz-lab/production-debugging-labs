@@ -16,7 +16,7 @@
 
 <h3>🚨 Issue Summary</h3>
 <p><strong>Issue:</strong> Node entering NotReady state after worker node process stops</p>
-<p><strong>Environment:</strong> KIND Cluster (Multi-node)</p>
+<p><strong>Environment:</strong>(Multi-node)</p>
 <p><strong>Impact:</strong> Pods evicted, workloads disrupted</p>
 
 <hr>

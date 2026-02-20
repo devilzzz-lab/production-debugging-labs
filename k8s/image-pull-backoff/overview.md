@@ -16,7 +16,6 @@
 
 <h3>🚨 Issue Summary</h3>
 <p><strong>Issue:</strong> Pod entering ImagePullBackOff state after deployment with wrong/invalid image</p>
-<p><strong>Environment:</strong> Kubernetes Cluster</p>
 <p><strong>Impact:</strong> Application unavailable</p>
 
 <hr>
