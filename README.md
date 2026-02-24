@@ -160,9 +160,9 @@
 <ol>
     <li><strong>Browse by Category</strong> - Navigate to folders organized by technology</li>
     <li><strong>Read the Issue</strong> - Each issue contains problem creation, description, symptoms, and context</li>
-    <li><strong>Try to Solve</strong> - You can apply the issue creation and attempt the solution before looking at the answer</li>
-    <li><strong>Learn the Solution</strong> - Detailed step-by-step resolution with explanations</li>
-    <li><strong>Practice</strong> - Recreate the scenario in your own environment</li>
+      <li><strong>Practice</strong> - Recreate the scenario in your own environment</li>
+    <li><strong>Try to Solve</strong> - You can apply the issue creation and attempt the solution by looking at the answer</li>
+    <li><strong>Learn the Solution</strong> - Detailed step by step resolution with explanations</li>
     <li><strong>Contribute</strong> - Share your own production debugging experiences</li>
 </ol>
 
