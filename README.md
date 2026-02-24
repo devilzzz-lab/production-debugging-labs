@@ -173,7 +173,7 @@
 <ul>
     <li>Junior DevOps Engineers looking to level up</li>
     <li>Software Engineers transitioning to DevOps</li>
-    <li>SREs preparing for on-call rotations</li>
+    <li>SREs preparing for on call rotations</li>
     <li>Anyone preparing for DevOps interviews</li>
     <li>Teams building internal knowledge bases</li>
     <li>Platform Engineers debugging infrastructure issues</li>
