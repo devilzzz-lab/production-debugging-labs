@@ -40,7 +40,7 @@ oom-demo   0/1     CrashLoopBackOff   2 (16s ago)   35s</pre>
 <hr>
 
 <h2>✅ Next Steps</h2>
-<p><a href="debug-steps.html">🔍 How I Debug It →</a></p>
+<p><a href="debug-steps.md">🔍 How I Debug It →</a></p>
 
 <hr>
 
