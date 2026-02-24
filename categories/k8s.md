@@ -18,7 +18,7 @@
 
 <h2>📋 Issues Covered</h2>
 
-<p><em>👆 Click underlined issue names to jump to Full Guide</em></p>
+<p><em>👆 Click issue names to jump to Full Guide</em></p>
 
 <h3><a href="/k8s/pod-crashloop/overview.md"> Pod CrashLoopBackOff</a> → Full Guide</h3>
 <h3><a href="/k8s/image-pull-backoff/overview.md"> ImagePullBackOff</a> → Full Guide</h3>
