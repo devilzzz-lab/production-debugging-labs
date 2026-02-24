@@ -8,15 +8,16 @@
 
 <h1 align="center">My DevOps Lab</h1>
 <h3 align="center">50 Real Production Issues & Solutions</h3>
+<h3 align="center">Progress: 4 Kubernetes issues</h3>
 
-<p align="center">Real world production debugging scenarios with step by step solutions for DevOps Engineers</p>
+<p align="center">Real world production debugging scenarios with step-by-step solutions for DevOps Engineers</p>
 
 <hr>
 
 <h2>📜 Table of Contents</h2>
 <ul>
-    <li><a href="#-what-youll-learn">What You'll Learn</a></li>
-    <li><a href="#-categories-covered">Categories Covered</a>
+    <li><a href="#what-youll-learn">What You'll Learn</a></li>
+    <li><a href="#categories-covered">Categories Covered</a>
         <ul>
             <li><a href="#kubernetes">Kubernetes</a></li>
             <li><a href="#cicd">CI/CD</a></li>
@@ -26,48 +27,43 @@
             <li><a href="#sre">SRE</a></li>
         </ul>
     </li>
-    <li><a href="#-repository-structure">Repository Structure</a></li>
-    <li><a href="#-technologies-covered">Technologies Covered</a></li>
-    <li><a href="#-how-to-use-this-repository">How to Use This Repository</a></li>
-    <li><a href="#-who-is-this-for">Who Is This For?</a></li>
-    <li><a href="#-issue-structure">Issue Structure</a></li>
-    <li><a href="#-contact">Contact</a></li>
+    <li><a href="#repository-structure">Repository Structure</a></li>
+    <li><a href="#technologies-covered">Technologies Covered</a></li>
+    <li><a href="#how-to-use">How to Use This Repository</a></li>
+    <li><a href="#who-is-this-for">Who Is This For?</a></li>
+    <li><a href="#issue-structure">Issue Structure</a></li>
+    <li><a href="#contact">Contact</a></li>
 </ul>
 
 <hr>
 
-<h2 id="-what-youll-learn">📚 What You'll Learn</h2>
-
+<h2 id="what-youll-learn">📚 What You'll Learn</h2>
 <ul>
     <li><strong>Kubernetes troubleshooting</strong> - Pod crashes, network policies, resource limits</li>
     <li><strong>CI/CD pipeline debugging</strong> - Build failures, deployment rollbacks, automation</li>
     <li><strong>Monitoring & Observability</strong> - Metrics, logs, traces, alerts</li>
-    <li><strong>Infrastructure as Code</strong> - Terraform, Ansible, CloudFormation</li>
+    <li><strong>Infrastructure as Code</strong> - Terraform</li>
     <li><strong>Security & Compliance</strong> - Secrets management, vulnerability scanning</li>
     <li><strong>Performance Optimization</strong> - Database tuning, caching strategies, load balancing</li>
 </ul>
 
 <hr>
 
-<h2 id="-categories-covered">🎯 Categories Covered</h2>
+<h2 id="categories-covered">🎯 Categories Covered</h2>
+<p align="center"><em>👆 Click the links below to explore each category</em></p>
 
-<p><em>👆 Click the links below to explore each category</em></p>
-
-<h3 id="kubernetes">🔗 <u><a href="categories/k8s.md">Kubernetes</a></u></h3>
-<h3 id="cicd">🔗 <u><a href="categories/cicd.md">CI/CD</a></u></h3>
-<h3 id="cloud">🔗 <u><a href="categories/cloud.md">Cloud (AWS & Azure)</a></u></h3>
-<h3 id="monitoring">🔗 <u><a href="categories/monitoring.md">Monitoring</a></u></h3>
-<h3 id="automation">🔗 <u><a href="categories/automation.md">Automation</a></u></h3>
-<h3 id="sre">🔗 <u><a href="categories/sre.md">SRE</a></u></h3>
-
-
+<h3 id="kubernetes" align="center">🔗 <u><a href="categories/k8s.md">Kubernetes</a></u></h3>
+<h3 id="cicd" align="center">🔗 <u><a href="categories/cicd.md">CI/CD</a></u></h3>
+<h3 id="cloud" align="center">🔗 <u><a href="categories/cloud.md">Cloud (AWS & Azure)</a></u></h3>
+<h3 id="monitoring" align="center">🔗 <u><a href="categories/monitoring.md">Monitoring</a></u></h3>
+<h3 id="automation" align="center">🔗 <u><a href="categories/automation.md">Automation</a></u></h3>
+<h3 id="sre" align="center">🔗 <u><a href="categories/sre.md">SRE</a></u></h3>
 
 <hr>
 
-<h2 id="-repository-structure">💡 Base Repository Design Structure</h2>
+<h2 id="repository-structure">💡 Base Repository Design Structure</h2>
 
-<pre>
-production-debugging-labs/
+<pre><code>production-debugging-labs/
 │
 ├── k8s/
 │   ├── pod-crashloop/
@@ -79,13 +75,11 @@ production-debugging-labs/
 │   └── service-unreachable/
 │
 ├── cloud/
-│   │
 │   ├── aws/
 │   │   ├── ec2-high-cpu/
 │   │   ├── alb-503/
 │   │   ├── rds-latency/
 │   │   └── disk-full/
-│   │
 │   └── azure/
 │       ├── vm-high-cpu/
 │       ├── appgw-502/
@@ -122,31 +116,30 @@ production-debugging-labs/
 │   └── oncall.md
 │
 └── README.md
-</pre>
+</code></pre>
 
 <hr>
 
-<h2 id="-issue-structure">📦 Structure of Each Issue</h2>
+<h2 id="issue-structure">📦 Structure of Each Issue</h2>
 
 <p>Every issue follows a consistent format for easy learning:</p>
 
-<pre>
-issue-name/
+<pre><code>issue-name/
 ├── overview.md          # Problem description and context
-├── debug-steps.md       # How to Debug it process
+├── debug-steps.md       # How to debug it (step-by-step)
 ├── fix.md               # Solution implementation
-</pre>
+</code></pre>
 
 <p><strong>Example: pod-crashloop/</strong></p>
 <ul>
     <li><strong>overview.md</strong> - What happened, symptoms, impact</li>
-    <li><strong>debug-steps.md</strong> - How to Fix step by step</li>
+    <li><strong>debug-steps.md</strong> - How to debug step-by-step</li>
     <li><strong>fix.md</strong> - Root cause analysis and solution</li>
 </ul>
 
 <hr>
 
-<h2 id="-technologies-covered">🛠️ Technologies Covered</h2>
+<h2 id="technologies-covered">🛠️ Technologies Covered</h2>
 
 <p align="center">
     <img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white" alt="Kubernetes">
@@ -162,25 +155,25 @@ issue-name/
 
 <hr>
 
-<h2 id="-how-to-use-this-repository">📖 How to Use This Repository</h2>
+<h2 id="how-to-use">📖 How to Use This Repository</h2>
 
 <ol>
     <li><strong>Browse by Category</strong> - Navigate to folders organized by technology</li>
-    <li><strong>Read the Issue</strong> - Each issue contains problem description, symptoms, and context</li>
-    <li><strong>Try to Solve</strong> - Attempt the solution before looking at the answer</li>
-    <li><strong>Learn the Solution</strong> - Detailed step by step resolution with explanations</li>
+    <li><strong>Read the Issue</strong> - Each issue contains problem creation, description, symptoms, and context</li>
+    <li><strong>Try to Solve</strong> - You can apply the issue creation and attempt the solution before looking at the answer</li>
+    <li><strong>Learn the Solution</strong> - Detailed step-by-step resolution with explanations</li>
     <li><strong>Practice</strong> - Recreate the scenario in your own environment</li>
     <li><strong>Contribute</strong> - Share your own production debugging experiences</li>
 </ol>
 
 <hr>
 
-<h2 id="-who-is-this-for">🎓 Who Is This For?</h2>
+<h2 id="who-is-this-for">🎓 Who Is This For?</h2>
 
 <ul>
     <li>Junior DevOps Engineers looking to level up</li>
     <li>Software Engineers transitioning to DevOps</li>
-    <li>SREs preparing for on call rotations</li>
+    <li>SREs preparing for on-call rotations</li>
     <li>Anyone preparing for DevOps interviews</li>
     <li>Teams building internal knowledge bases</li>
     <li>Platform Engineers debugging infrastructure issues</li>
@@ -188,7 +181,7 @@ issue-name/
 
 <hr>
 
-<h2 id="-contact">📬 Contact</h2>
+<h2 id="contact">📬 Contact</h2>
 
 <p>Questions? Suggestions? Reach out:</p>
 
@@ -200,17 +193,11 @@ issue-name/
 
 <hr>
 
-<p align="center">
-    <strong>⭐ Star this repo if you find it helpful!</strong>
-</p>
+<p align="center"><strong>⭐ Star this repo if you find it helpful!</strong></p>
 
-<p align="center">
-    <em>"The only way to learn production debugging is to debug production issues."</em>
-</p>
+<p align="center"><em>"The only way to learn production debugging is to debug production issues."</em></p>
 
-<p align="center">
-    Made for DevOps Engineers
-</p>
+<p align="center">Made for DevOps Engineers 🚀</p>
 
 </body>
 </html>
