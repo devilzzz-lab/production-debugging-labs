@@ -27,16 +27,19 @@ oom-demo   0/1     CrashLoopBackOff   1 (2s ago)   6s</pre>
 <h2>3️⃣ Check Events</h2>
 <pre>kubectl get events --sort-by=.metadata.creationTimestamp | grep oom-demo</pre>
 
-<pre>Warning  BackOff         5m22s  kubelet  Back-off restarting failed container memory-hog</pre>
+<pre>3m18s       Warning   BackOff   pod/oom-demo   Back-off restarting failed container memory-hog</pre>
 
 <h2>4️⃣ Check Resource Configuration</h2>
 <pre>kubectl describe pod oom-demo | grep -A5 -B5 "Limits\|Requests"</pre>
 
-<pre>Resources:
-  Limits:
-    <strong>memory: 50Mi</strong>
-  Requests:
-    memory: 25Mi</pre>
+<pre>    Ready:          False
+    Restart Count:  17
+    Limits:
+      cpu:     500m
+      <strong>memory:  50Mi</strong>
+    Requests:
+      cpu:        250m
+      memory:     25Mi</pre>
 
 <h2>5️⃣ Confirm OOMKilled</h2>
 <pre>kubectl get pod oom-demo -o jsonpath='{.status.containerStatuses[0].lastState.terminated.reason}'</pre>
@@ -53,7 +56,7 @@ oom-demo   0/1     CrashLoopBackOff   1 (2s ago)   6s</pre>
 <hr>
 
 <h2>✅ Next Steps</h2>
-<p><a href="fix.html">✅ How to Fix →</a></p>
+<p><a href="fix.md">✅ How to Fix →</a></p>
 
 <hr>
 
