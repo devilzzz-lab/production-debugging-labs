@@ -52,8 +52,8 @@ kubectl describe pod oom-demo         ← Deep dive</pre>
 <hr>
 
 <p align="center">
-    <a href="index.html">← Back to OOMKilled</a> | 
-    <a href="../../categories/k8s.html">🏠 Kubernetes Issues</a>
+    <a href="overview.md">← Back to OOMKilled</a> | 
+    <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
 </p>
 
 </body>

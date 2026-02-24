@@ -58,8 +58,8 @@ oom-demo   0/1     CrashLoopBackOff   1 (2s ago)   6s</pre>
 <hr>
 
 <p align="center">
-    <a href="index.html">← Back to OOMKilled</a> | 
-    <a href="../../categories/k8s.html">🏠 Kubernetes Issues</a>
+    <a href="overview.md">← Back to OOMKilled</a> | 
+    <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
 </p>
 
 </body>
