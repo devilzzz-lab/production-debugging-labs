@@ -16,7 +16,6 @@
 
 <h3>🚨 Issue Summary</h3>
 <p><strong>Issue:</strong> Pod terminated by Linux kernel due to memory limit exceeded (Exit Code: 137)</p>
-<p><strong>Environment:</strong> Kubernetes Cluster</p>
 <p><strong>Impact:</strong> Application crashes, CrashLoopBackOff cycle</p>
 
 <hr>
