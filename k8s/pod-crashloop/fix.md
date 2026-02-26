@@ -70,8 +70,9 @@ kubectl logs → postgres-service                   ← ENV VAR working!</pre>
 <hr>
 
 <p align="center">
-    <a href="../pod-crashloop/overview.md">← Back to Pod CrashLoopBackOff</a> | 
-    <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
+  <a href="overview.md">← Back to Overview</a> | 
+  <a href="debug-steps.md">🔍 Debug Steps</a> | 
+  <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
 </p>
 
 </body>

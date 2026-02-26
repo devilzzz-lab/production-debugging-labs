@@ -48,8 +48,9 @@ imagepull-error-5ff487869f-jmhrp   1/1     Running   0          15s</pre>
 <hr>
 
 <p align="center">
-    <a href="overview.md">← Back to ImagePullBackOff</a> | 
-    <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
+  <a href="overview.md">← Back to Overview</a> | 
+  <a href="debug-steps.md">🔍 Debug Steps</a> | 
+  <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
 </p>
 
 </body>

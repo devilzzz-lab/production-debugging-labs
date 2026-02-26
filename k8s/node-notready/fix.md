@@ -51,8 +51,9 @@ kubectl describe node                 ← Deep dive</pre>
 <hr>
 
 <p align="center">
-    <a href="overview.md">← Back to Node NotReady</a> | 
-    <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
+  <a href="overview.md">← Back to Overview</a> | 
+  <a href="debug-steps.md">🔍 Debug Steps</a> | 
+  <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
 </p>
 
 </body>
