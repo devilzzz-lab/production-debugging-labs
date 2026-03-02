@@ -70,7 +70,6 @@ pvc/data-pvc             1Gi        RWO            Bound    data-pv            &
 <tr><th>Problem</th><th>Solution</th><th>Result</th></tr>
 <tr><td><code>storageClassName: ""</code></td><td>Remove line → Use default</td><td>Dynamic provisioning ✅</td></tr>
 <tr><td>No matching PV</td><td>Create exact PV match</td><td>Static binding ✅</td></tr>
-<tr><td><code>&lt;unset&gt;</code> StorageClass</td><td>Default <code>standard</code></td><td>Auto-provisioned PV</td></tr>
 </table>
 
 <hr>
