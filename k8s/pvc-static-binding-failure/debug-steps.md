@@ -6,101 +6,96 @@
 </head>
 <body>
 
-<h1>🔍 Debug Steps for PVC Pending State</h1>
+<h1 align="center">🔍 Debug Steps - PVC Pending State</h1>
 
 <hr>
 
 <h2>1️⃣ Check PVC Status</h2>
-<pre>kubectl get pvc</pre>
+<pre><code>kubectl get pvc</code></pre>
 
-<p><strong>Output:</strong></p>
+<p><strong>❌ Symptom:</strong></p>
+<pre><code>NAME      STATUS    VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+data-pvc  Pending                      RWO   &lt;unset&gt;        20s</code></pre>
 
-<pre>
-NAME       STATUS    VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
-data-pvc   Pending                                      standard       20s
-</pre>
-
-<p><strong>🔍 Key Finding:</strong> PVC is stuck in <code>Pending</code></p>
+<p><strong>🔍 Key:</strong> <code>Pending</code> + <code>&lt;unset&gt;</code> StorageClass</p>
 
 <hr>
 
-<h2>2️⃣ Describe the PVC (First Step Always!)</h2>
+<h2>2️⃣ Describe PVC (ALWAYS FIRST!)</h2>
+<pre><code>kubectl describe pvc data-pvc</code></pre>
 
-<pre>kubectl describe pvc data-pvc</pre>
-
-<pre>
-Events:
+<p><strong>❌ Root Cause Event:</strong></p>
+<pre><code>Events:
   Type    Reason         Age               From                         Message
   ----    ------         ----              ----                         -------
-  Normal  FailedBinding  6s (x3 over 26s)  persistentvolume-controller  no persistent volumes available for this claim and no storage class is set
-</pre>
+  Normal  FailedBinding  6s (x3 over 26s)  persistentvolume-controller  no persistent volumes available for this claim and no storage class is set</code></pre>
 
-<p><strong>🔍 Key Finding:</strong> <code>no persistent volumes available for this claim</code></p>
-
-<hr>
-
-<h2>3️⃣ Check Available PersistentVolumes</h2>
-
-<pre>kubectl get pv</pre>
-
-<p><strong>If Output is Empty:</strong></p>
-
-<pre>No matching PV</pre>
-
-<p><strong>Meaning:</strong> No PV exists to satisfy the claim.</p>
+<p><strong>🔍 Keywords:</strong> <code>"no storage class is set"</code></p>
 
 <hr>
 
-<h2>4️⃣ Check StorageClass</h2>
+<h2>3️⃣ List Available PVs</h2>
+<pre><code>kubectl get pv</code></pre>
 
-<pre>kubectl get sc</pre>
+<p><strong>❌ No Matching PV:</strong></p>
+<pre><code>No resources found</code></pre>
 
-<p><strong>Check if Default StorageClass Exists:</strong></p>
-
-<pre>
-NAME                 PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   AGE
-standard (default)   rancher.io/local-path   Delete          WaitForFirstConsumer   false                  77d
-</pre>
-
-<p><strong>If no default StorageClass:</strong> Dynamic provisioning will fail.</p>
+<p><strong>🔍 Meaning:</strong> No static PV matches 1Gi ReadWriteOnce</p>
 
 <hr>
 
-<h2>5️⃣ Check Provisioner Pods (Dynamic Case)</h2>
+<h2>4️⃣ Check StorageClasses (TRICKY!)</h2>
+<pre><code>kubectl get sc</code></pre>
 
-<pre>kubectl get pods -A | grep provisioner</pre>
+<p><strong>✅ StorageClass EXISTS:</strong></p>
+<pre><code>NAME                 PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+standard (default)   rancher.io/local-path   Delete          WaitForFirstConsumer   false                  77d</code></pre>
 
-<p>If no CSI provisioner is running → PVC cannot be dynamically created.</p>
+<p><strong>❌ BUT PVC YAML has:</strong></p>
+<pre><code>spec:
+  storageClassName: ""  # ❌ EMPTY STRING = DISABLES DYNAMIC PROVISIONING!</code></pre>
 
-<hr>
-
-<h2>🧠 What You Should Observe</h2>
+<p><strong>🔍 Key Insight:</strong></p>
 <ul>
-    <li><strong><code>STATUS: Pending</code></strong></li>
-    <li><strong><code>ProvisioningFailed</code> event</strong></li>
-    <li><strong>No matching PV available</strong></li>
-    <li><strong>Missing or misconfigured StorageClass</strong></li>
+  <li>StorageClass <code>standard</code> exists ✅</li>
+  <li><code>storageClassName: ""</code> = <strong>EXPLICITLY DISABLES dynamic provisioning</strong> ❌</li>
+  <li>Only matches PVs with <strong>NO StorageClass</strong> (none exist)</li>
+  <li><code>&lt;unset&gt;</code> in table confirms empty class requested</li>
 </ul>
 
-<p><strong>Root cause:</strong> No PersistentVolume or Dynamic Provisioner available to satisfy the claim.</p>
+<hr>
 
-<pre><strong>Look for these keywords:</strong>
-- "Pending"
-- "ProvisioningFailed"
-- "no persistent volumes available"
-- "storageclass not found"
-- "failed to provision volume"</pre>
+<h2>5️⃣ Verify Pod Waiting</h2>
+<pre><code>kubectl get pods</code></pre>
+
+<p><strong>❌ Pod Stuck:</strong></p>
+<pre><code>NAME      READY   STATUS             RESTARTS   AGE
+app-pod   0/1     Pending            0          2m</code></pre>
+
+<hr>
+
+<h2>🧠 Diagnosis Summary</h2>
+
+<table>
+<tr><th>Command</th><th>What You See</th><th>Root Cause</th></tr>
+<tr><td><code>get pvc</code></td><td><code>Pending</code> + <code>&lt;unset&gt;</code></td><td><code>storageClassName: ""</code></td></tr>
+<tr><td><code>describe pvc</code></td><td><code>"no storage class is set"</code></td><td>Dynamic provisioning disabled</td></tr>
+<tr><td><code>get sc</code></td><td><code>standard (default)</code> exists</td><td>PVC ignores it due to empty class</td></tr>
+<tr><td><code>get pv</code></td><td>Empty list</td><td>No no-class PVs available</td></tr>
+</table>
 
 <hr>
 
 <h2>✅ Next Steps</h2>
-<p><a href="fix.md">✅ How to Fix The Issue →</a></p>
+<p align="center">
+  <a href="fix.md" style="font-size:1.5em">🔧 How to Fix →</a>
+</p>
 
 <hr>
 
 <p align="center">
-    <a href="overview.md">← Back to PVC Pending</a> | 
-    <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
+  <a href="overview.md">← Back to Overview</a> | 
+  <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
 </p>
 
 </body>

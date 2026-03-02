@@ -6,60 +6,57 @@
 </head>
 <body>
 
-<h1>📌 How I Created PVC Pending State Issue</h1>
+<h1 align="center">📌 How I Created PVC Pending State Issue</h1>
 
 <hr>
 
-<h2>1️⃣ Apply the PVC YAML (Without PV or StorageClass)</h2>
+<h2>1️⃣ Create Broken PVC (No StorageClass)</h2>
 
-<pre><code>manifest % kubectl apply -f pvc.yaml
-persistentvolumeclaim/data-pvc created</code></pre>
+<pre><code>manifest % kubectl apply -f pvc.yaml</code></pre>
 
-<h2>2️⃣ Check PVC Status</h2>
-
-<pre><code>manifest % kubectl get pvc</code></pre>
-
-<p><strong>Output:</strong></p>
-
-<pre>
-NAME       STATUS    VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
-data-pvc   Pending                                      standard       5s
-</pre>
+<p><strong>✅ Output:</strong></p>
+<pre><code>persistentvolumeclaim/data-pvc created</code></pre>
 
 <hr>
 
-<h2>3️⃣ Describe the PVC</h2>
+<h2>2️⃣ Check PVC Stuck in Pending</h2>
+<pre><code>kubectl get pvc</code></pre>
 
-<pre><code>manifest % kubectl describe pvc data-pvc</code></pre>
+<p><strong>❌ Pending Forever:</strong></p>
+<pre><code>NAME      STATUS    VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+data-pvc  Pending                      ReadWriteOnce   &lt;unset&gt;        5s</code></pre>
 
-<p><strong>Events Output:</strong></p>
+<hr>
 
-<pre>
-Events:
+<h2>3️⃣ Describe PVC (Root Cause)</h2>
+<pre><code>kubectl describe pvc data-pvc</code></pre>
+
+<p><strong>❌ Events Show Failure:</strong></p>
+<pre><code>Events:
   Type    Reason         Age               From                         Message
   ----    ------         ----              ----                         -------
-  Normal  FailedBinding  6s (x3 over 26s)  persistentvolume-controller  no persistent volumes available for this claim and no storage class is set
-</pre>
+  Normal  FailedBinding  6s (x3 over 26s)  persistentvolume-controller  no persistent volumes available for this claim and no storage class is set</code></pre>
 
 <hr>
 
 <h2>🔍 What's Happening?</h2>
 <ul>
-    <li><strong>PVC created successfully</strong></li>
-    <li><strong>No matching PersistentVolume found</strong></li>
-    <li><strong>No dynamic provisioner available</strong> (or not configured)</li>
-    <li><strong>PVC remains in Pending state</strong></li>
+    <li><strong>PVC created successfully</strong> ✅</li>
+    <li><strong>No matching PV found</strong> ❌</li>
+    <li><strong>No StorageClass</strong> → <strong>No dynamic provisioning</strong> ❌</li>
+    <li><strong>PVC stays Pending indefinitely</strong> 🚫</li>
 </ul>
 
 <hr>
 
 <h2>🧠 Why It Stays Pending?</h2>
-<ul>
-    <li>No PV exists that matches requested storage</li>
-    <li>StorageClass may not exist</li>
-    <li>Provisioner pod not running</li>
-    <li>Access mode or size mismatch</li>
-</ul>
+
+<table>
+<tr><th>Problem</th><th>Cause</th><th>Result</th></tr>
+<tr><td><code>storageClassName: ""</code></td><td>Empty StorageClass</td><td>No dynamic provisioner triggered</td></tr>
+<tr><td>No matching PV</td><td>No static PV with 1Gi RWO</td><td>No static binding</td></tr>
+<tr><td><code>&lt;unset&gt;</code> in table</td><td>Empty storageClassName</td><td>Pending state forever</td></tr>
+</table>
 
 <hr>
 
@@ -69,7 +66,7 @@ Events:
 <hr>
 
 <p align="center">
-    <a href="overview.md">← Back to PVC Pending</a> | 
+    <a href="overview.md">← Back to Pod CrashLoopBackOff</a> | 
     <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
 </p>
 
