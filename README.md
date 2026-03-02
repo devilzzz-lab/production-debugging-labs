@@ -66,6 +66,7 @@
 <pre><code>production-debugging-labs/
 │
 ├── k8s/
+│   ├── aks-cluster-setup
 │   ├── pod-crashloop/
 │   ├── image-pull-backoff/
 │   ├── node-notready/
