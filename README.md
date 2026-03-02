@@ -52,12 +52,12 @@
 <h2 id="categories-covered">🎯 Categories Covered</h2>
 <p align="center"><em>👆 Click the links below to explore each category</em></p>
 
-<h3 id="kubernetes" align="center">🔗 <u><a href="categories/k8s.md">Kubernetes</a></u></h3>
-<h3 id="cicd" align="center">🔗 <u><a href="categories/cicd.md">CI/CD</a></u></h3>
-<h3 id="cloud" align="center">🔗 <u><a href="categories/cloud.md">Cloud (AWS & Azure)</a></u></h3>
-<h3 id="monitoring" align="center">🔗 <u><a href="categories/monitoring.md">Monitoring</a></u></h3>
-<h3 id="automation" align="center">🔗 <u><a href="categories/automation.md">Automation</a></u></h3>
-<h3 id="sre" align="center">🔗 <u><a href="categories/sre.md">SRE</a></u></h3>
+<h3 id="kubernetes">🔗 <u><a href="categories/k8s.md">Kubernetes</a></u></h3>
+<h3 id="cicd">🔗 <u><a href="categories/cicd.md">CI/CD</a></u></h3>
+<h3 id="cloud">🔗 <u><a href="categories/cloud.md">Cloud (AWS & Azure)</a></u></h3>
+<h3 id="monitoring">🔗 <u><a href="categories/monitoring.md">Monitoring</a></u></h3>
+<h3 id="automation">🔗 <u><a href="categories/automation.md">Automation</a></u></h3>
+<h3 id="sre">🔗 <u><a href="categories/sre.md">SRE</a></u></h3>
 
 <hr>
 
