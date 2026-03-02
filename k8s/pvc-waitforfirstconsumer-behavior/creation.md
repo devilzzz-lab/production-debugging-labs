@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaitForFirstConsumer Behavior</title>
 </head>
 <body>
 
@@ -15,6 +16,8 @@
 <pre><code>manifest % kubectl apply -f pvc.yaml
 persistentvolumeclaim/data-pvc created</code></pre>
 
+<hr>
+
 <h2>2️⃣ Check PVC Status</h2>
 
 <pre><code>manifest % kubectl get pvc</code></pre>
@@ -26,6 +29,8 @@ NAME       STATUS    VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 data-pvc   Pending                                      standard       5s
 </pre>
 
+<p><strong>Observation:</strong> PVC remains in <code>Pending</code> state.</p>
+
 <hr>
 
 <h2>3️⃣ Describe the PVC</h2>
@@ -36,29 +41,29 @@ data-pvc   Pending                                      standard       5s
 
 <pre>
 Events:
-  Type    Reason                Age               From                         Message
-  ----    ------                ----              ----                         -------
-  Normal  WaitForFirstConsumer  2s (x3 over 18s)  persistentvolume-controller  waiting for first consumer to be created before binding
+  Type    Reason                Age   From                         Message
+  ----    ------                ----  ----                         -------
+  Normal  WaitForFirstConsumer  3s    persistentvolume-controller  waiting for first consumer to be created before binding
 </pre>
 
 <hr>
 
-<h2>🔍 What's Happening?</h2>
+<h2>🔍 What Is Happening?</h2>
 <ul>
     <li><strong>PVC created successfully</strong></li>
-    <li><strong>Default StorageClass is configured</strong></li>
-    <li><strong>Provisioner is running</strong></li>
+    <li><strong>Default StorageClass (<code>standard</code>) is configured</strong></li>
+    <li><strong>Provisioner pod is running</strong></li>
     <li><strong>VolumeBindingMode = WaitForFirstConsumer</strong></li>
-    <li><strong>PVC waits until a Pod consumes it</strong></li>
+    <li><strong>Volume creation is delayed intentionally</strong></li>
 </ul>
 
 <hr>
 
 <h2>🧠 Why It Stays Pending?</h2>
 <ul>
-    <li>StorageClass uses <code>WaitForFirstConsumer</code></li>
-    <li>Kubernetes delays volume creation until Pod scheduling</li>
-    <li>This prevents wrong-node volume allocation</li>
+    <li>The StorageClass uses <code>WaitForFirstConsumer</code></li>
+    <li>Kubernetes waits until a Pod references this PVC</li>
+    <li>This ensures volume is created on the correct node</li>
 </ul>
 
 <hr>
@@ -67,13 +72,15 @@ Events:
 
 <p>
 This is <strong>NOT a failure</strong>.  
-This is expected behavior in modern Kubernetes clusters.
+This is expected behavior in modern Kubernetes clusters using 
+<code>WaitForFirstConsumer</code>.
 </p>
 
 <hr>
 
-<h2>✅ Next Steps</h2>
-<p>Create a Pod that uses this PVC to trigger binding.</p>
+<h2>➡️ Next Step</h2>
+
+<p>Create a Pod that uses this PVC to trigger dynamic provisioning and binding.</p>
 <p><a href="debug-steps.md">🔍 Continue Debugging →</a></p>
 
 <hr>
