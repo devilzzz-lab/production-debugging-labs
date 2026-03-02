@@ -15,10 +15,10 @@
 
 <p><strong>❌ Symptom:</strong></p>
 <pre><code>
-NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
-data-pvc    Pending  pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO            standard       <code><unset></code>                        32m</code></pre>
+NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+data-pvc    Pending  pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO            standard       32m</code></pre>
 
-<p><strong>🔍 Key:</strong> <code>Pending</code> + <code>&lt;unset&gt;</code> StorageClass</p>
+<p><strong>🔍 Key:</strong> <code>Pending</code></code> StorageClass</p>
 
 <hr>
 
@@ -71,7 +71,7 @@ standard (default)   rancher.io/local-path   Delete          WaitForFirstConsume
 
 <table>
 <tr><th>Command</th><th>What You See</th><th>Root Cause</th></tr>
-<tr><td><code>get pvc</code></td><td><code>Pending</code> + <code>&lt;unset&gt;</code></td><td><code>storageClassName: ""</code></td></tr>
+<tr><td><code>get pvc</code></td><td><code>Pending</code></td><td><code>storageClassName: ""</code></td></tr>
 <tr><td><code>describe pvc</code></td><td><code>"no storage class is set"</code></td><td>Dynamic provisioning disabled</td></tr>
 <tr><td><code>get sc</code></td><td><code>standard (default)</code> exists</td><td>PVC ignores it due to empty class</td></tr>
 <tr><td><code>get pv</code></td><td>Empty list</td><td>No no-class PVs available</td></tr>
@@ -80,8 +80,8 @@ standard (default)   rancher.io/local-path   Delete          WaitForFirstConsume
 <hr>
 
 <h2>✅ Next Steps</h2>
-<p align="center">
-  <a href="fix.md" style="font-size:1.5em">🔧 How to Fix →</a>
+<p>
+    <a href="fix.md">How to Fix The Issue →</a>
 </p>
 
 <hr>
