@@ -16,7 +16,7 @@
 <p><strong>❌ Symptom:</strong></p>
 <pre><code>
 NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
-data-pvc    Bound    pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO            standard       32m</pre>
+data-pvc    Bound    pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO            standard       32m</code></pre>
 
 <p><strong>🔍 Key:</strong> <code>Pending</code> + <code>&lt;unset&gt;</code> StorageClass</p>
 
@@ -58,10 +58,10 @@ standard (default)   rancher.io/local-path   Delete          WaitForFirstConsume
 
 <p><strong>🔍 Key Insight:</strong></p>
 <ul>
-  <li>StorageClass <code>standard</code> exists ✅</li>
-  <li><code>storageClassName: ""</code> = <strong>EXPLICITLY DISABLES dynamic provisioning</strong> ❌</li>
-  <li>Only matches PVs with <strong>NO StorageClass</strong> (none exist)</li>
-  <li><code>&lt;unset&gt;</code> in table confirms empty class requested</li>
+    <li>StorageClass <code>standard</code> exists ✅</li>
+    <li><code>storageClassName: ""</code> = <strong>EXPLICITLY DISABLES dynamic provisioning</strong> ❌</li>
+    <li>Only matches PVs with <strong>NO StorageClass</strong> (none exist)</li>
+    <li><code>&lt;unset&gt;</code> in table confirms empty class requested</li>
 </ul>
 
 <hr>
@@ -71,7 +71,7 @@ standard (default)   rancher.io/local-path   Delete          WaitForFirstConsume
 
 <p><strong>❌ Pod Stuck:</strong></p>
 <pre><code>NAME      READY   STATUS             RESTARTS   AGE
-   0/1     Pending            0          2m</code></pre>
+app-pod   0/1     Pending            0          2m</code></pre>
 
 <hr>
 

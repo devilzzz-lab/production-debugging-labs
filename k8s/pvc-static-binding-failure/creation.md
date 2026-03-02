@@ -25,18 +25,7 @@
 <p><strong>❌ Pending Forever:</strong></p>
 <pre><code>
 NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
-data-pvc    Bound    pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO            standard       32m</code></pre>
-
-<hr>
-
-<h2>3️⃣ Describe PVC (Root Cause)</h2>
-<pre><code>kubectl describe pvc data-pvc</code></pre>
-
-<p><strong>❌ Events Show Failure:</strong></p>
-<pre><code>Events:
-  Type    Reason         Age               From                         Message
-  ----    ------         ----              ----                         -------
-  Normal  FailedBinding  6s (x3 over 26s)  persistentvolume-controller  no persistent volumes available for this claim and no storage class is set</code></pre>
+data-pvc    Pending  pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO            standard       32m</code></pre>
 
 <hr>
 
