@@ -24,7 +24,7 @@
 
 <p><strong>❌ Pending Forever:</strong></p>
 <pre><code>NAME      STATUS    VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
-data-pvc  Pending                      ReadWriteOnce   &lt;unset&gt;        5s</code></pre>
+data-pvc  Pending                      RWO   &lt;unset&gt;        5s</code></pre>
 
 <hr>
 
