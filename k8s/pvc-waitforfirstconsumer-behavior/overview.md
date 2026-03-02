@@ -35,7 +35,7 @@
 <hr>
 
 <p align="center">
-    <a href="../../categories/k8s.md">← Back to Kubernetes Issues</a>
+    <a href="../../categories/k8s.md">← Back to Kubernetes Issues</a> | 
 </p>
 
 </body>

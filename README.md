@@ -8,7 +8,7 @@
 
 <h1 align="center">My DevOps Lab</h1>
 <h3 align="center">50 Real Production Issues & Solutions</h3>
-<h3 align="center">Progress: 5 Kubernetes issues</h3>
+<h3 align="center">Progress: 8 Kubernetes issues</h3>
 
 <p align="center">Real world production debugging scenarios with step-by-step solutions for DevOps Engineers</p>
 
