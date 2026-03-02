@@ -43,28 +43,16 @@ kubectl apply -f pvc.yaml</code></pre>
 <pre><code>kubectl get pvc</code></pre>
 
 <p><strong>✅ Auto-bound:</strong></p>
-<pre><code>NAME      STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
-data-pvc  Bound    pvc-xxx-yyy                                1Gi        RWO            standard       10s</code></pre>
+<pre><code>
+NAME      STATUS   VOLUME       CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+data-pvc  Bound    pvc-xxx-yyy  1Gi        RWO            standard       10s</code></pre>
 
 <hr>
 
 <h2>🛠️ Fix Method 2: Static Provisioning (Manual PV)</h2>
 
-<h3>1️⃣ Create Matching PV</h3>
-<pre><code>cat &lt;&lt;EOF | kubectl apply -f -
-apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: data-pv
-spec:
-  capacity:
-    storage: 1Gi
-  accessModes:
-    - ReadWriteOnce
-  storageClassName: ""          # ✅ Matches PVC's empty class
-  hostPath:
-    path: /tmp/data-pv
-EOF</code></pre>
+<h3>1️⃣ Apply PV yaml</h3>
+<pre><code>kubectl apply -f pv.yaml</code></pre>
 
 <h3>2️⃣ Verify Static Binding</h3>
 <pre><code>kubectl get pv,pvc</code></pre>
@@ -72,19 +60,18 @@ EOF</code></pre>
 <p><strong>✅ Manual binding:</strong></p>
 <pre><code>NAME                     CAPACITY   ACCESS MODES   STATUS   CLAIM              STORAGECLASS   AGE
 pv/data-pv               1Gi        RWO            Bound    default/data-pvc   &lt;unset&gt;        15s
-
 pvc/data-pvc             1Gi        RWO            Bound    data-pv            &lt;unset&gt;        20s</code></pre>
 
 <hr>
 
 <h2>🔍 Verification Commands</h2>
-<pre><code># ✅ PVC bound
+<pre><code>✅ PVC bound
 kubectl get pvc
 
-# ✅ PV created/bound (dynamic case)
+✅ PV created/bound (dynamic case)
 kubectl get pv | grep data-pvc
 
-# ✅ Pod can use volume
+✅ Pod can use volume
 kubectl get pods</code></pre>
 
 <hr>
