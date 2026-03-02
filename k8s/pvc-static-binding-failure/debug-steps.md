@@ -15,8 +15,8 @@
 
 <p><strong>❌ Symptom:</strong></p>
 <pre><code>
-NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
-data-pvc    Bound    pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO            standard       32m</code></pre>
+NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+data-pvc    Pending  pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO            standard       <unset>                        32m</code></pre>
 
 <p><strong>🔍 Key:</strong> <code>Pending</code> + <code>&lt;unset&gt;</code> StorageClass</p>
 
@@ -49,7 +49,8 @@ data-pvc    Bound    pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO  
 <pre><code>kubectl get sc</code></pre>
 
 <p><strong>✅ StorageClass EXISTS:</strong></p>
-<pre><code>NAME                 PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+<pre><code>
+NAME                 PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
 standard (default)   rancher.io/local-path   Delete          WaitForFirstConsumer   false                  77d</code></pre>
 
 <p><strong>❌ BUT PVC YAML has:</strong></p>
@@ -63,15 +64,6 @@ standard (default)   rancher.io/local-path   Delete          WaitForFirstConsume
     <li>Only matches PVs with <strong>NO StorageClass</strong> (none exist)</li>
     <li><code>&lt;unset&gt;</code> in table confirms empty class requested</li>
 </ul>
-
-<hr>
-
-<h2>5️⃣ Verify Pod Waiting</h2>
-<pre><code>kubectl get pods</code></pre>
-
-<p><strong>❌ Pod Stuck:</strong></p>
-<pre><code>NAME      READY   STATUS             RESTARTS   AGE
-app-pod   0/1     Pending            0          2m</code></pre>
 
 <hr>
 
