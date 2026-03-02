@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1 align="center">🔴 PVC Static Binding Failure</h1>
+<h1>🔴 PVC STATIC BINDING FAILURE</h1>
 
 <p align="center">
     <img src="https://img.shields.io/badge/Status-FailedBinding-ff4444?logo=kubernetes&logoColor=white" alt="PVC FailedBinding">
@@ -14,22 +14,21 @@
 
 <hr>
 
-<h2 align="center">🚨 Issue Summary</h2>
-<p align="center"><strong>Issue:</strong> PVC stuck in <code>Pending</code> due to no matching PersistentVolume.</p>
-<p align="center"><strong>Impact:</strong> Pod cannot start because storage is not available.</p>
+<h3>🚨 Issue Summary</h3>
+<p><strong>Issue:</strong> PVC stuck in <code>Pending</code> due to no matching PersistentVolume.</p>
+<p><strong>Impact:</strong> Pod cannot start because storage is not available.</p>
 
 <hr>
 
-<h2 align="center">📂 All Resources</h2>
+<h2>📂 All Resources</h2>
 
-<table align="center" border="1" cellpadding="12" cellspacing="0" style="margin: 0 auto;">
+<table border="1" cellpadding="12" cellspacing="0">
     <tr>
-        <td align="center"><a href="creation.md"><strong>📌 How I Created Issue</strong></a></td>
-        <td align="center"><a href="debug-steps.md"><strong>🔍 How I Debug It</strong></a></td>
+        <td><strong><a href="creation.md">📌 How I Created Issue</a></strong></td>
+        <td><strong><a href="debug-steps.md">🔍 How I Debug It</a></strong></td>
     </tr>
     <tr>
-        <td align="center"><a href="fix.md"><strong>✅ How I Fixed It</strong></a></td>
-        <td align="center"></td>
+        <td><strong><a href="fix.md">✅ How I Fixed It</a></strong></td>
     </tr>
 </table>
 
