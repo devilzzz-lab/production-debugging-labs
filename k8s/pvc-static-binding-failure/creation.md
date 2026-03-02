@@ -23,7 +23,7 @@
 <pre><code>kubectl get pvc</code></pre>
 
 <p><strong>❌ Pending Forever:</strong></p>
-<pre><code>\
+<pre><code>
 NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
 data-pvc    Bound    pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO            standard       <unset>                 32m</code></pre>
 
