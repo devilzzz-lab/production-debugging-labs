@@ -30,9 +30,9 @@ data-pvc   Pending                                      standard       20s
 
 <pre>
 Events:
-  Type     Reason              Age    From                         Message
-  ----     ------              ----   ----                         -------
-  Warning  ProvisioningFailed  15s    persistentvolume-controller  no persistent volumes available for this claim
+  Type    Reason         Age               From                         Message
+  ----    ------         ----              ----                         -------
+  Normal  FailedBinding  6s (x3 over 26s)  persistentvolume-controller  no persistent volumes available for this claim and no storage class is set
 </pre>
 
 <p><strong>🔍 Key Finding:</strong> <code>no persistent volumes available for this claim</code></p>
@@ -45,7 +45,7 @@ Events:
 
 <p><strong>If Output is Empty:</strong></p>
 
-<pre>No resources found</pre>
+<pre>No matching PV</pre>
 
 <p><strong>Meaning:</strong> No PV exists to satisfy the claim.</p>
 
@@ -59,7 +59,7 @@ Events:
 
 <pre>
 NAME                 PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   AGE
-standard (default)   kubernetes.io/no-provisioner   Delete          Immediate           2d
+standard (default)   rancher.io/local-path   Delete          WaitForFirstConsumer   false                  77d
 </pre>
 
 <p><strong>If no default StorageClass:</strong> Dynamic provisioning will fail.</p>
@@ -73,6 +73,11 @@ standard (default)   kubernetes.io/no-provisioner   Delete          Immediate   
 <p>If no CSI provisioner is running → PVC cannot be dynamically created.</p>
 
 <hr>
+
+<h2>🧠 Root Cause</h2>
+<ul>
+<li>VolumeBindingMode = WaitForFirstConsumer</li>
+<li>PVC waits until Pod is scheduled</li>
 
 <h2>🧠 What You Should Observe</h2>
 <ul>

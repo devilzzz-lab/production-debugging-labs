@@ -72,7 +72,8 @@
 │   ├── node-notready/
 │   ├── oom-killed/
 │   ├── dns-failure/
-│   ├── pvc-pending/
+│   ├── pvc-static-binding-failure/
+│   ├── pvc-waitforfirstconsumer-behavior/
 │   └── service-unreachable/
 │
 ├── cloud/

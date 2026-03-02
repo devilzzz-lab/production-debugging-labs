@@ -44,8 +44,8 @@ spec:
 <p><strong>Expected Output:</strong></p>
 
 <pre>
-NAME       STATUS   VOLUME    CAPACITY   ACCESS MODES   AGE
-data-pvc   Bound    data-pv   1Gi        RWO            30s
+NAME       STATUS   VOLUME    RECLAIM POLICY  CAPACITY   ACCESS MODES   AGE   CLAIM        
+data-pvc   Bound    data-pv   Retain          1Gi        RWO            30s   default/data-pvc
 </pre>
 
 <p>✅ PVC successfully bound to PV.</p>

@@ -36,9 +36,9 @@ data-pvc   Pending                                      standard       5s
 
 <pre>
 Events:
-  Type     Reason              Age    From                         Message
-  ----     ------              ----   ----                         -------
-  Warning  ProvisioningFailed  10s    persistentvolume-controller  no persistent volumes available for this claim
+  Type    Reason         Age               From                         Message
+  ----    ------         ----              ----                         -------
+  Normal  FailedBinding  6s (x3 over 26s)  persistentvolume-controller  no persistent volumes available for this claim and no storage class is set
 </pre>
 
 <hr>
