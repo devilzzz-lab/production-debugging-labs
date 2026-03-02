@@ -86,6 +86,11 @@ data-pvc   Bound    pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO   
 
 <hr>
 
+<h2>✅ Next Steps</h2>
+<p>
+    <a href="debug-steps.md">Debug Steps →</a>
+</p>
+
 <p align="center">
     <a href="overview.md">← Back to WaitForFirstConsumer</a> | 
     <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>

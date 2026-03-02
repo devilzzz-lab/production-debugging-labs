@@ -92,7 +92,7 @@ Dynamic provisioning will occur automatically once a Pod consumes the PVC.
 <h2>➡️ Next Step</h2>
 
 <p>Create a Pod that uses this PVC to trigger binding.</p>
-<p><a href="fix.md">✅ Trigger Binding →</a></p>
+<p><a href="fix.md">✅ Fix Guide →</a></p>
 
 <hr>
 
