@@ -33,7 +33,7 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  # ✅ No storageClassName = Uses default 'standard'</code></pre>
+</code></pre>
 
 <h3>2️⃣ Recreate PVC</h3>
 <pre><code>kubectl delete pvc data-pvc --force
@@ -64,17 +64,42 @@ pvc/data-pvc             1Gi        RWO            Bound    data-pv            &
 
 <hr>
 
-<h2>🔍 Verification Commands</h2>
-<pre><code>✅ PVC bound
-kubectl get pvc
+<h2>🔎 Verification Steps</h2>
 
-✅ PV created/bound (dynamic case)
-kubectl get pv | grep data-pvc
+<h3>1️⃣ Confirm PVC Status</h3>
+<pre><code>kubectl get pvc data-pvc</code></pre>
 
-✅ Pod can use volume
-kubectl get pods</code></pre>
+<p><strong>Expected Result:</strong> Status should be <code>Bound</code></p>
 
 <hr>
+
+<h3>2️⃣ Confirm PV Binding</h3>
+<pre><code>kubectl get pv</code></pre>
+
+<p>
+Ensure a PersistentVolume is created and its <code>STATUS</code> is 
+<code>Bound</code> with claim <code>default/data-pvc</code>.
+</p>
+
+<hr>
+
+<h3>3️⃣ (Dynamic Case) Verify Auto-Provisioned Volume</h3>
+<pre><code>kubectl describe pvc data-pvc</code></pre>
+
+<p>
+Check for dynamically generated volume name (example: <code>pvc-xxxx-xxxx</code>) 
+and confirm <code>StorageClass: standard</code>.
+</p>
+
+<hr>
+
+<h3>4️⃣ (Optional) Verify Pod Can Mount Volume</h3>
+<pre><code>kubectl get pods
+kubectl describe pod pvc-test-pod</code></pre>
+
+<p>
+Confirm the Pod is <code>Running</code> and volume is mounted successfully.
+</p>
 
 <h2>🧠 What Fixed It?</h2>
 
