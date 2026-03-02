@@ -39,17 +39,6 @@ data-pvc    Pending  pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO  
 
 <hr>
 
-<h2>🧠 Why It Stays Pending?</h2>
-
-<table>
-<tr><th>Problem</th><th>Cause</th><th>Result</th></tr>
-<tr><td><code>storageClassName: ""</code></td><td>Empty StorageClass</td><td>No dynamic provisioner triggered</td></tr>
-<tr><td>No matching PV</td><td>No static PV with 1Gi RWO</td><td>No static binding</td></tr>
-<tr><td><code>&lt;unset&gt;</code> in table</td><td>Empty storageClassName</td><td>Pending state forever</td></tr>
-</table>
-
-<hr>
-
 <h2>✅ Next Steps</h2>
 <p><a href="debug-steps.md">🔍 How I Debug It →</a></p>
 
