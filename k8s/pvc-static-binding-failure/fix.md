@@ -64,43 +64,6 @@ pvc/data-pvc             1Gi        RWO            Bound    data-pv            &
 
 <hr>
 
-<h2>🔎 Verification Steps</h2>
-
-<h3>1️⃣ Confirm PVC Status</h3>
-<pre><code>kubectl get pvc data-pvc</code></pre>
-
-<p><strong>Expected Result:</strong> Status should be <code>Bound</code></p>
-
-<hr>
-
-<h3>2️⃣ Confirm PV Binding</h3>
-<pre><code>kubectl get pv</code></pre>
-
-<p>
-Ensure a PersistentVolume is created and its <code>STATUS</code> is 
-<code>Bound</code> with claim <code>default/data-pvc</code>.
-</p>
-
-<hr>
-
-<h3>3️⃣ (Dynamic Case) Verify Auto-Provisioned Volume</h3>
-<pre><code>kubectl describe pvc data-pvc</code></pre>
-
-<p>
-Check for dynamically generated volume name (example: <code>pvc-xxxx-xxxx</code>) 
-and confirm <code>StorageClass: standard</code>.
-</p>
-
-<hr>
-
-<h3>4️⃣ (Optional) Verify Pod Can Mount Volume</h3>
-<pre><code>kubectl get pods
-kubectl describe pod pvc-test-pod</code></pre>
-
-<p>
-Confirm the Pod is <code>Running</code> and volume is mounted successfully.
-</p>
-
 <h2>🧠 What Fixed It?</h2>
 
 <table>
