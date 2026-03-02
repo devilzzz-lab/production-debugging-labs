@@ -16,7 +16,7 @@
 <p><strong>❌ Symptom:</strong></p>
 <pre><code>
 NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
-data-pvc    Pending  pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO            standard       <unset>                        32m</code></pre>
+data-pvc    Pending  pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO            standard       <code><unset></code>                        32m</code></pre>
 
 <p><strong>🔍 Key:</strong> <code>Pending</code> + <code>&lt;unset&gt;</code> StorageClass</p>
 

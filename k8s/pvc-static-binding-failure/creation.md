@@ -45,7 +45,7 @@ data-pvc    Pending  pvc-339fc84d-2c23-4ecf-97aa-2b8279785343   1Gi        RWO  
 <hr>
 
 <p align="center">
-    <a href="overview.md">← Back to Pod CrashLoopBackOff</a> | 
+    <a href="overview.md">← Back to Pod Pvc Static</a> | 
     <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
 </p>
 
