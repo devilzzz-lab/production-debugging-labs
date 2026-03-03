@@ -14,7 +14,7 @@
 
 <pre><code>manifest % kubectl apply -f deployment.yaml</code></pre>
 
-<p><strong>deployment.apps/nginx-deploy created</strong></p>
+<p>deployment.apps/nginx-deploy created</p>
 
 <hr>
 
@@ -22,7 +22,7 @@
 
 <pre><code>manifest % kubectl apply -f service.yaml</code></pre>
 
-<p><strong>service/nginx-service created</strong></p>
+<p>service/nginx-service created</p>
 
 <hr>
 
