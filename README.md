@@ -127,8 +127,9 @@
 
 <p>Every issue follows a consistent format for easy learning:</p>
 
-<pre><code>issue-name/
+<pre><code>issue-name/  
 ├── overview.md          # Problem description and context
+├── creation.md          # How to create the Issue
 ├── debug-steps.md       # How to debug it (step-by-step)
 ├── fix.md               # Solution implementation
 </code></pre>
@@ -136,6 +137,7 @@
 <p><strong>Example: pod-crashloop/</strong></p>
 <ul>
     <li><strong>overview.md</strong> - What happened, symptoms, impact</li>
+    <li><strong>creation.md</strong> - To Create the scenario</li>
     <li><strong>debug-steps.md</strong> - How to debug step-by-step</li>
     <li><strong>fix.md</strong> - Root cause analysis and solution</li>
 </ul>
