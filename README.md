@@ -8,7 +8,7 @@
 
 <h1 align="center">My DevOps Lab</h1>
 <h3 align="center">50 Real Production Issues & Solutions</h3>
-<h3 align="center">Progress: 8 Kubernetes issues</h3>
+<h3 align="center">Progress: 9 Kubernetes issues</h3>
 
 <p align="center">Real world production debugging scenarios with step-by-step solutions for DevOps Engineers</p>
 
@@ -66,7 +66,7 @@
 <pre><code>production-debugging-labs/
 │
 ├── k8s/
-│   ├── aks-cluster-setup
+│   ├── aks-cluster-setup/
 │   ├── pod-crashloop/
 │   ├── image-pull-backoff/
 │   ├── node-notready/
@@ -74,7 +74,8 @@
 │   ├── dns-failure/
 │   ├── pvc-static-binding-failure/
 │   ├── pvc-waitforfirstconsumer-behavior/
-│   └── service-unreachable/
+│   ├── service-unreachable/
+│   └── readiness-liveness-probe-failure/
 │
 ├── cloud/
 │   ├── aws/
@@ -162,7 +163,7 @@
 <ol>
     <li><strong>Browse by Category</strong> - Navigate to folders organized by technology</li>
     <li><strong>Read the Issue</strong> - Each issue contains problem creation, description, symptoms, and context</li>
-      <li><strong>Practice</strong> - Recreate the scenario in your own environment</li>
+    <li><strong>Practice</strong> - Recreate the scenario in your own environment</li>
     <li><strong>Try to Solve</strong> - You can apply the issue creation and attempt the solution by looking at the answer</li>
     <li><strong>Learn the Solution</strong> - Detailed step by step resolution with explanations</li>
     <li><strong>Contribute</strong> - Share your own production debugging experiences</li>
