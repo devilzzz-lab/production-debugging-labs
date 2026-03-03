@@ -12,15 +12,17 @@
 
 <h2>1️⃣ Create Deployment</h2>
 
-<pre><code>manifest % kubectl apply -f deployment.yaml
-deployment.apps/nginx-deploy created</code></pre>
+<pre><code>manifest % kubectl apply -f deployment.yaml</code></pre>
+
+<p><strong>deployment.apps/nginx-deploy created</strong></p>
 
 <hr>
 
 <h2>2️⃣ Create Service (With Wrong Selector)</h2>
 
-<pre><code>manifest % kubectl apply -f service.yaml
-service/nginx-service created</code></pre>
+<pre><code>manifest % kubectl apply -f service.yaml</code></pre>
+
+<p><strong>service/nginx-service created</strong></p>
 
 <hr>
 
