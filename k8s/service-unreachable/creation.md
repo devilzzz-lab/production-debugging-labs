@@ -12,41 +12,12 @@
 
 <h2>1️⃣ Create Deployment</h2>
 
-<pre><code>apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nginx-deploy
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: nginx-app
-  template:
-    metadata:
-      labels:
-        app: nginx-app
-    spec:
-      containers:
-      - name: nginx
-        image: nginx</code></pre>
-
 <pre><code>manifest % kubectl apply -f deployment.yaml
 deployment.apps/nginx-deploy created</code></pre>
 
 <hr>
 
 <h2>2️⃣ Create Service (With Wrong Selector)</h2>
-
-<pre><code>apiVersion: v1
-kind: Service
-metadata:
-  name: nginx-service
-spec:
-  selector:
-    app: wrong-label   # ❌ Wrong label
-  ports:
-  - port: 80
-    targetPort: 80</code></pre>
 
 <pre><code>manifest % kubectl apply -f service.yaml
 service/nginx-service created</code></pre>
