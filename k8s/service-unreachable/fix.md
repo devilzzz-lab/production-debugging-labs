@@ -111,7 +111,7 @@ nginx-service   10.244.0.5:80      2m
 <hr>
 
 <p align="center">
-    <a href="debug-steps.md">← Debug Steps</a> | 
+    <a href="debug-steps.md">← Debug Steps</a>
     <a href="overview.md">← Back to Service Unreachable</a> | 
     <a href="../../categories/k8s.md">🏠 Kubernetes Issues</a>
 </p>
