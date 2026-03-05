@@ -28,6 +28,7 @@
 <h3><a href="/k8s/pvc-static-binding-failure/overview.md"> PVC Static Binding Failure</a> → Full Guide</h3>
 <h3><a href="/k8s/pvc-waitforfirstconsumer-behavior/overview.md"> PVC WaitForFirstConsumer</a> → Full Guide</h3>
 <h3><a href="/k8s/service-unreachable/overview.md"> Service Unreachable</a> → Full Guide</h3>
+<h3><a href="/k8s/readiness-liveness-probe-failure/overview.md"> Readiness Liveness Probe </a> → Full Guide</h3>
 
 <hr>
 
