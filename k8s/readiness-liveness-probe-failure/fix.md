@@ -87,16 +87,6 @@ nginx-probe-test-6c8f9b7c8f-xyz12   1/1     Running   0          40s
 
 <hr>
 
-<h3>4️⃣ Verify Service Endpoints (Optional)</h3>
-
-<pre><code>kubectl get endpoints</code></pre>
-
-<p>
-The Pod now appears in the Service endpoints because the readiness probe succeeded.
-</p>
-
-<hr>
-
 <h2>🧠 What Happened Internally?</h2>
 
 <ul>

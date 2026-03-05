@@ -57,20 +57,7 @@ Events:
 
 <hr>
 
-<h2>3️⃣ Check Pod Logs</h2>
-
-<pre>kubectl logs nginx-probe-test-xxxx</pre>
-
-<p><strong>Observation:</strong></p>
-
-<p>
-Logs show normal nginx startup with no application error.
-This confirms the issue is related to probe configuration, not the container itself.
-</p>
-
-<hr>
-
-<h2>4️⃣ Verify Container Port</h2>
+<h2>3️⃣ Verify Container Port</h2>
 
 <pre>kubectl describe pod nginx-probe-test-xxxx | grep Port</pre>
 

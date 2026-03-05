@@ -23,7 +23,7 @@ deployment.apps/nginx-probe-test created
 
 <hr>
 
-<h2>3️⃣ Check Pod Status</h2>
+<h2>2️⃣ Check Pod Status</h2>
 
 <pre><code>kubectl get pods</code></pre>
 
