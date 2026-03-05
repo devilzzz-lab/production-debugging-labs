@@ -7,10 +7,24 @@
 <body>
 
 <h1 align="center">My DevOps Lab</h1>
-<h3 align="center">50 Real Production Issues & Solutions</h3>
-<h3 align="center">Progress: 9 Kubernetes issues</h3>
+<h3 align="center">50+ Real Production Issues & Solutions</h3>
+<h3 align="center">Progress: 10 Kubernetes Issues Completed</h3>
+
+<p align="center">
+<img src="https://img.shields.io/github/stars/devilzzz-lab/production-debugging-labs?style=social">
+<img src="https://img.shields.io/github/forks/devilzzz-lab/production-debugging-labs?style=social">
+<img src="https://img.shields.io/github/last-commit/devilzzz-lab/production-debugging-labs">
+</p>
 
 <p align="center">Real world production debugging scenarios with step by step solutions for DevOps Engineers</p>
+
+<hr>
+
+<h2>🎥 Demo Video</h2>
+
+<p align="center">
+<a href="YOUR_VIDEO_LINK">▶ Watch Demo of the Lab</a>
+</p>
 
 <hr>
 
@@ -58,6 +72,19 @@
 <h3 id="monitoring">🔗 <u><a href="categories/monitoring.md">Monitoring</a></u></h3>
 <h3 id="automation">🔗 <u><a href="categories/automation.md">Automation</a></u></h3>
 <h3 id="sre">🔗 <u><a href="categories/sre.md">SRE</a></u></h3>
+
+<hr>
+
+<h2>🚧 Project Progress</h2>
+
+<ul>
+<li>✅ Kubernetes Troubleshooting (10 Issues)</li>
+<li>🔄 CI/CD Failures (Coming Next)</li>
+<li>🔄 Cloud Production Incidents</li>
+<li>🔄 Monitoring Failures</li>
+<li>🔄 Automation Issues</li>
+<li>🔄 SRE Incidents</li>
+</ul>
 
 <hr>
 
@@ -128,17 +155,17 @@
 <p>Every issue follows a consistent format for easy learning:</p>
 
 <pre><code>issue-name/  
-├── overview.md          # Problem description and context
-├── creation.md          # How to create the Issue
-├── debug-steps.md       # How to debug it
-├── fix.md               # Solution implementation
+├── overview.md
+├── creation.md
+├── debug-steps.md
+├── fix.md
 </code></pre>
 
 <p><strong>Example: pod-crashloop/</strong></p>
 <ul>
     <li><strong>overview.md</strong> - What happened, symptoms, impact</li>
-    <li><strong>creation.md</strong> - To Create the scenario</li>
-    <li><strong>debug-steps.md</strong> - How to debug step by step</li>
+    <li><strong>creation.md</strong> - How to create the scenario</li>
+    <li><strong>debug-steps.md</strong> - Step-by-step debugging</li>
     <li><strong>fix.md</strong> - Root cause analysis and solution</li>
 </ul>
 
@@ -147,15 +174,15 @@
 <h2 id="technologies-covered">🛠️ Technologies Covered</h2>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white" alt="Kubernetes">
-    <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker">
-    <img src="https://img.shields.io/badge/Terraform-7B42BC?logo=terraform&logoColor=white" alt="Terraform">
-    <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white" alt="AWS">
-    <img src="https://img.shields.io/badge/Azure-0078D4?logo=microsoftazure&logoColor=white" alt="Azure">
-    <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white" alt="GitHub Actions">
-    <img src="https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white" alt="Prometheus">
-    <img src="https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white" alt="Grafana">
-    <img src="https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white" alt="Jenkins">
+    <img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white">
+    <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white">
+    <img src="https://img.shields.io/badge/Terraform-7B42BC?logo=terraform&logoColor=white">
+    <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white">
+    <img src="https://img.shields.io/badge/Azure-0078D4?logo=microsoftazure&logoColor=white">
+    <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white">
+    <img src="https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white">
+    <img src="https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white">
+    <img src="https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white">
 </p>
 
 <hr>
@@ -163,11 +190,11 @@
 <h2 id="how-to-use">📖 How to Use This Repository</h2>
 
 <ol>
-    <li><strong>Browse by Category</strong> - Navigate to folders organized by technology</li>
-    <li><strong>Read the Issue</strong> - Each issue contains problem creation, description, symptoms, and context</li>
+    <li><strong>Browse by Category</strong> - Navigate through folders organized by technology</li>
+    <li><strong>Read the Issue</strong> - Understand the problem, symptoms, and context</li>
     <li><strong>Practice</strong> - Recreate the scenario in your own environment</li>
-    <li><strong>Try to Solve</strong> - You can apply the issue creation and attempt the solution by looking at the answer</li>
-    <li><strong>Learn the Solution</strong> - Detailed step by step resolution with explanations</li>
+    <li><strong>Try to Solve</strong> - Attempt to solve the issue yourself before checking the solution</li>
+    <li><strong>Learn the Solution</strong> - Follow the step-by-step resolution guide</li>
     <li><strong>Contribute</strong> - Share your own production debugging experiences</li>
 </ol>
 
@@ -178,7 +205,7 @@
 <ul>
     <li>Junior DevOps Engineers looking to level up</li>
     <li>Software Engineers transitioning to DevOps</li>
-    <li>SREs preparing for on call rotations</li>
+    <li>SREs preparing for on-call rotations</li>
     <li>Anyone preparing for DevOps interviews</li>
     <li>Teams building internal knowledge bases</li>
     <li>Platform Engineers debugging infrastructure issues</li>
@@ -187,8 +214,6 @@
 <hr>
 
 <h2 id="contact">📬 Contact</h2>
-
-<p>Questions? Suggestions? Reach out:</p>
 
 <ul>
     <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sriramg-s">Sriram G</a></li>

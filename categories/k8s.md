@@ -14,6 +14,18 @@
 
 <hr>
 
+<h2>🎥 Demo Video</h2>
+
+<p>
+Watch the demo to understand how to use this Kubernetes troubleshooting lab.
+</p>
+
+<p>
+<a href="YOUR_VIDEO_LINK_HERE">▶ Watch Demo Video</a>
+</p>
+
+<hr>
+
 <h3><a href="/k8s/aks-cluster-setup/setup.md"> Azure Kubernetes Cluster Setup</a> → Full Guide</h3>
 
 <h2>📋 Issues Covered</h2>
