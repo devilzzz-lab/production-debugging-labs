@@ -20,10 +20,27 @@
 
 <hr>
 
-<h2>🎥 Demo Video</h2>
+<h2>🚧 Project Progress</h2>
 
-<p align="center">
-<a href="YOUR_VIDEO_LINK">▶ Watch Demo of the Lab</a>
+<ul>
+<li>✅ Kubernetes Troubleshooting (10 Issues)</li>
+<li>🔄 CI/CD Failures (Coming Next)</li>
+<li>🔄 Cloud Production Incidents</li>
+<li>🔄 Monitoring Failures</li>
+<li>🔄 Automation Issues</li>
+<li>🔄 SRE Incidents</li>
+</ul>
+
+<hr>
+
+<h2>🎥 Demo Videos</h2>
+
+<p>
+Watch the demo to understand how to use this Kubernetes troubleshooting lab.
+</p>
+
+<p>
+<a href="YOUR_VIDEO_LINK">▶ Watch Demo of the Kubernetes Lab</a>
 </p>
 
 <hr>
@@ -73,18 +90,6 @@
 <h3 id="automation">🔗 <u><a href="categories/automation.md">Automation</a></u></h3>
 <h3 id="sre">🔗 <u><a href="categories/sre.md">SRE</a></u></h3>
 
-<hr>
-
-<h2>🚧 Project Progress</h2>
-
-<ul>
-<li>✅ Kubernetes Troubleshooting (10 Issues)</li>
-<li>🔄 CI/CD Failures (Coming Next)</li>
-<li>🔄 Cloud Production Incidents</li>
-<li>🔄 Monitoring Failures</li>
-<li>🔄 Automation Issues</li>
-<li>🔄 SRE Incidents</li>
-</ul>
 
 <hr>
 
