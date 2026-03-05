@@ -39,10 +39,8 @@
 Watch the demo to understand how to use this Kubernetes troubleshooting lab.
 </p>
 
-<p align="center">
-<a href="YOUR_VIDEO_LINK">
-<img src="https://img.youtube.com/vi/VIDEO_ID/0.jpg" width="600">
-</a>
+<p>
+<a href="YOUR_VIDEO_LINK">▶ Watch Demo of the Kubernetes Lab</a>
 </p>
 
 <hr>
