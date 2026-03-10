@@ -36,7 +36,7 @@
 <h2>🎥 Demo Videos</h2>
 
 <p>
-Watch the demo to understand how to use this Kubernetes troubleshooting lab.
+Watch the demo to understand how to use this debugging lab.
 </p>
 
 <p>
@@ -170,7 +170,7 @@ Watch the demo to understand how to use this Kubernetes troubleshooting lab.
 <ul>
     <li><strong>overview.md</strong> - What happened, symptoms, impact</li>
     <li><strong>creation.md</strong> - How to create the scenario</li>
-    <li><strong>debug-steps.md</strong> - Step-by-step debugging</li>
+    <li><strong>debug-steps.md</strong> - Step by step debugging</li>
     <li><strong>fix.md</strong> - Root cause analysis and solution</li>
 </ul>
 
@@ -199,7 +199,7 @@ Watch the demo to understand how to use this Kubernetes troubleshooting lab.
     <li><strong>Read the Issue</strong> - Understand the problem, symptoms, and context</li>
     <li><strong>Practice</strong> - Recreate the scenario in your own environment</li>
     <li><strong>Try to Solve</strong> - Attempt to solve the issue yourself before checking the solution</li>
-    <li><strong>Learn the Solution</strong> - Follow the step-by-step resolution guide</li>
+    <li><strong>Learn the Solution</strong> - Follow the step by step resolution guide</li>
     <li><strong>Contribute</strong> - Share your own production debugging experiences</li>
 </ol>
 
@@ -210,7 +210,7 @@ Watch the demo to understand how to use this Kubernetes troubleshooting lab.
 <ul>
     <li>Junior DevOps Engineers looking to level up</li>
     <li>Software Engineers transitioning to DevOps</li>
-    <li>SREs preparing for on-call rotations</li>
+    <li>SREs preparing for on call rotations</li>
     <li>Anyone preparing for DevOps interviews</li>
     <li>Teams building internal knowledge bases</li>
     <li>Platform Engineers debugging infrastructure issues</li>
@@ -230,7 +230,7 @@ Watch the demo to understand how to use this Kubernetes troubleshooting lab.
 
 <p align="center"><strong>⭐ Star this repo if you find it helpful!</strong></p>
 
-<p align="center"><em>"The only way to learn production debugging is to debug production issues."</em></p>
+<p align="center"><em>"Learning Never Ends"</em></p>
 
 <p align="center">Made for DevOps Engineers 🚀</p>
 
