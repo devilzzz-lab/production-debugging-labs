@@ -97,11 +97,11 @@ How to use Kubernetes debugging lab.
 
 <pre><code>production-debugging-labs/
 │
-├── README.md                 # 🔥 Main landing page (very important)
-├── CONTRIBUTING.md           # (later)
-├── LICENSE                   # (later)
+├── README.md                 # 🔥 Main landing page
+├── CONTRIBUTING.md           # later
+├── LICENSE                   # later
 │
-├── categories/               # 📚 Quick navigation (like docs)
+├── categories/               # 📚 Quick navigation like docs
 │   ├── k8s.md
 │   ├── cloud.md
 │   ├── cicd.md
@@ -140,13 +140,6 @@ How to use Kubernetes debugging lab.
 │
 ├── cloud/                    # ☁️ Cloud debugging
 │   ├── aws/
-│   │   ├── ec2-high-cpu/
-│   │   │   ├── overview.md
-│   │   │   ├── creation.md
-│   │   │   ├── debug-steps.md
-│   │   │   ├── fix.md
-│   │   │   └── learnings.md
-│   │   │
 │   │   ├── alb-503/
 │   │   ├── rds-latency/
 │   │   └── disk-full/
@@ -184,7 +177,7 @@ How to use Kubernetes debugging lab.
 │   ├── cloud/
 │   └── sre/
 │
-└── scripts/                  # 🛠️ Helper scripts (later)
+└── scripts/                  # 🛠️ Helper scripts - later
     ├── setup.sh
     └── cleanup.sh
 
