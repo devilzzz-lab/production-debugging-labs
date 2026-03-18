@@ -36,11 +36,11 @@
 <h2>🎥 Demo Videos</h2>
 
 <p>
-Watch the demo to understand how to use this debugging lab.
+How to use Kubernetes debugging lab.
 </p>
 
 <p>
-<a href="YOUR_VIDEO_LINK">▶ Watch Demo of the Kubernetes Lab</a>
+<a href="https://drive.google.com/file/d/1Wu8nrNgYVkOb3IbIK87uR-LXwov6zIwJ/view?usp=sharing">▶ Watch Demo of the Kubernetes Lab</a>
 </p>
 
 <hr>
@@ -97,60 +97,97 @@ Watch the demo to understand how to use this debugging lab.
 
 <pre><code>production-debugging-labs/
 │
-├── k8s/
-│   ├── aks-cluster-setup/
-│   ├── pod-crashloop/
-│   ├── image-pull-backoff/
-│   ├── node-notready/
-│   ├── oom-killed/
-│   ├── dns-failure/
-│   ├── pvc-static-binding-failure/
-│   ├── pvc-waitforfirstconsumer-behavior/
-│   ├── service-unreachable/
-│   └── readiness-liveness-probe-failure/
+├── README.md                 # 🔥 Main landing page (very important)
+├── CONTRIBUTING.md           # (later)
+├── LICENSE                   # (later)
 │
-├── cloud/
-│   ├── aws/
-│   │   ├── ec2-high-cpu/
-│   │   ├── alb-503/
-│   │   ├── rds-latency/
-│   │   └── disk-full/
-│   └── azure/
-│       ├── vm-high-cpu/
-│       ├── appgw-502/
-│       ├── sql-latency/
-│       └── storage-full/
+├── categories/               # 📚 Quick navigation (like docs)
+│   ├── k8s.md
+│   ├── cloud.md
+│   ├── cicd.md
+│   ├── monitoring.md
+│   ├── sre.md
+│   └── automation.md
 │
-├── cicd/
-│   ├── pipeline-fail/
-│   ├── artifact-missing/
-│   ├── runner-down/
-│   └── secret-expired/
-│
-├── monitoring/
-│   ├── alert-fatigue/
-│   ├── missing-metrics/
-│   ├── false-alerts/
-│   └── dashboard-broken/
-│
-├── automation/
-│   ├── terraform-state-lock/
-│   ├── ansible-failed/
-│   └── config-drift/
-│
-├── sre/
-│   ├── slo-breach/
-│   ├── latency-spike/
-│   └── traffic-surge/
-│
-├── runbooks/
+├── runbooks/                 # 🧠 Real SRE quick reference
 │   ├── k8s.md
 │   ├── aws.md
 │   ├── azure.md
 │   ├── cicd.md
 │   └── oncall.md
 │
-└── README.md
+├── k8s/                      # ☸️ Kubernetes debugging labs
+│   ├── aks-cluster-setup/
+│   │   └── setup.md
+│   │
+│   ├── dns-failure/
+│   │   ├── overview.md
+│   │   ├── creation.md
+│   │   ├── debug-steps.md
+│   │   ├── fix.md
+│   │   └── manifest/
+│   │       ├── dns-failure.yaml
+│   │       └── nginx.yaml
+│   │
+│   ├── pod-crashloop/
+│   ├── image-pull-backoff/
+│   ├── node-notready/
+│   ├── oom-killed/
+│   ├── pvc-static-binding-failure/
+│   ├── pvc-waitforfirstconsumer-behavior/
+│   ├── service-unreachable/
+│   └── readiness-liveness-probe-failure/
+│
+├── cloud/                    # ☁️ Cloud debugging
+│   ├── aws/
+│   │   ├── ec2-high-cpu/
+│   │   │   ├── overview.md
+│   │   │   ├── creation.md
+│   │   │   ├── debug-steps.md
+│   │   │   ├── fix.md
+│   │   │   └── learnings.md
+│   │   │
+│   │   ├── alb-503/
+│   │   ├── rds-latency/
+│   │   └── disk-full/
+│   │
+│   └── azure/
+│       ├── vm-high-cpu/
+│       ├── appgw-502/
+│       ├── sql-latency/
+│       └── storage-full/
+│
+├── cicd/                     # 🔁 CI/CD failures
+│   ├── pipeline-fail/
+│   ├── artifact-missing/
+│   ├── runner-down/
+│   └── secret-expired/
+│
+├── monitoring/               # 📊 Observability issues
+│   ├── alert-fatigue/
+│   ├── missing-metrics/
+│   ├── false-alerts/
+│   └── dashboard-broken/
+│
+├── automation/               # ⚙️ Infra automation issues
+│   ├── terraform-state-lock/
+│   ├── ansible-failed/
+│   └── config-drift/
+│
+├── sre/                      # 🚨 SRE scenarios
+│   ├── slo-breach/
+│   ├── latency-spike/
+│   └── traffic-surge/
+│
+├── images/                   # 🖼️ Diagrams & visuals
+│   ├── k8s/
+│   ├── cloud/
+│   └── sre/
+│
+└── scripts/                  # 🛠️ Helper scripts (later)
+    ├── setup.sh
+    └── cleanup.sh
+
 </code></pre>
 
 <hr>

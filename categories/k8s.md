@@ -21,7 +21,7 @@ Watch the demo to understand how to use this Kubernetes troubleshooting lab.
 </p>
 
 <p>
-<a href="YOUR_VIDEO_LINK_HERE">▶ Watch Demo Video</a>
+<a href="https://drive.google.com/file/d/1Wu8nrNgYVkOb3IbIK87uR-LXwov6zIwJ/view?usp=sharing">▶ Watch Demo Video</a>
 </p>
 
 <hr>
