@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1>🔷 CI/CD Issues</h1>
+<h1 align="center">🔷 CI/CD Issues</h1>
 
 <p align="center">
     <img src="https://img.shields.io/badge/CI/CD-239120?logo=githubactions&logoColor=white" alt="CI/CD">
@@ -14,49 +14,55 @@
 
 <hr>
 
-<h2>🎥 Demo Video</h2>
-
-<p>
-Watch the demo to understand how to use this CI/CD troubleshooting lab.
+<h2 align="center">🎥 Demo Video</h2>
+<p align="center">
+    Watch the demo to understand how to use this CI/CD troubleshooting lab.
 </p>
-
-<p>
-<a href="#">▶ Watch Demo Video</a>
+<p align="center">
+    <a href="#">▶ Watch Demo Video</a>
 </p>
 
 <hr>
 
-<h2>📋 Issues Covered</h2>
+<h2 align="center">📋 Issues Covered</h2>
+<p align="center"><em>👆 Click issue names to jump to Full Guide</em></p>
 
-<p><em>👆 Click issue names to jump to Full Guide</em></p>
-
-<h3><a href="/ci-cd/pipeline-failure/overview.md"> Pipeline Failures</a> → Full Guide</h3>
-<h3><a href="/ci-cd/artifact-missing/overview.md"> Artifact Missing Errors</a> → Full Guide</h3>
-<h3><a href="/ci-cd/runner-down/overview.md"> Runner / Agent Down</a> → Full Guide</h3>
-<h3><a href="/ci-cd/secret-expired/overview.md"> Secret Expiration Issues</a> → Full Guide</h3>
-<h3><a href="/ci-cd/deployment-rollback/overview.md"> Deployment Rollback Scenarios</a> → Full Guide</h3>
+<div align="center">
+<table style="margin: 0 auto; border-collapse: collapse;">
+    <tr>
+        <td><a href="pipeline-failure/overview.md"><strong>Pipeline Failures</strong></a></td>
+        <td><a href="artifact-missing/overview.md"><strong>Artifact Missing Errors</strong></a></td>
+    </tr>
+    <tr>
+        <td><a href="runner-down/overview.md"><strong>Runner / Agent Down</strong></a></td>
+        <td><a href="secret-expired/overview.md"><strong>Secret Expiration Issues</strong></a></td>
+    </tr>
+    <tr>
+        <td><a href="deployment-rollback/overview.md"><strong>Deployment Rollback Scenarios</strong></a></td>
+        <td></td>
+    </tr>
+</table>
+</div>
 
 <hr>
 
-<h2>🛠️ Quick Commands</h2>
-<pre>
-# GitHub Actions Commands
-gh run list
+<h2 align="center">🛠️ Quick Commands</h2>
+<pre><code>gh run list
 gh run view &lt;run-id&gt;
-gh run watch
+gh run watch</code></pre>
 
-# View Logs
-gh run view --log
+<h2 align="center">📋 View Logs</h2>
+<pre><code>gh run view --log</code></pre>
 
-# Re-run Workflow
-gh run rerun &lt;run-id&gt;
+<h2 align="center">🔄 Re-run Workflow</h2>
+<pre><code>gh run rerun &lt;run-id&gt;
 
-# Local Debugging (act)
-act -j &lt;job-name&gt;
-</pre>
+act -j &lt;job-name&gt;</code></pre>
+
+<hr>
 
 <p align="center">
-    <a href="../README.md"> ← Back to Main README</a>
+    <a href="../README.md">← Back to Main README</a>
 </p>
 
 </body>
