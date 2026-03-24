@@ -15,53 +15,40 @@
 <hr>
 
 <h2>🎥 Demo Video</h2>
+
 <p>
-    Watch the demo to understand how to use this CI/CD troubleshooting lab.
+Watch the demo to understand how to use this CI/CD troubleshooting lab.
 </p>
+
 <p>
-    <a href="#">▶ Watch Demo Video</a>
+<a href="https://drive.google.com/file/d/1Wu8nrNgYVkOb3IbIK87uR-LXwov6zIwJ/view?usp=sharing">▶ Watch Demo Video</a>
 </p>
 
 <hr>
 
+<h3><a href="aks-cluster-setup/setup.md">Azure DevOps Pipeline Setup</a> → Full Guide</h3>
+
 <h2>📋 Issues Covered</h2>
+
 <p><em>👆 Click issue names to jump to Full Guide</em></p>
 
-<div>
-<table style="margin: 0 auto; border-collapse: collapse;">
-    <tr>
-        <td><a href="pipeline-failure/overview.md"><strong>Pipeline Failures</strong></a></td>
-        <td><a href="artifact-missing/overview.md"><strong>Artifact Missing Errors</strong></a></td>
-    </tr>
-    <tr>
-        <td><a href="runner-down/overview.md"><strong>Runner / Agent Down</strong></a></td>
-        <td><a href="secret-expired/overview.md"><strong>Secret Expiration Issues</strong></a></td>
-    </tr>
-    <tr>
-        <td><a href="deployment-rollback/overview.md"><strong>Deployment Rollback Scenarios</strong></a></td>
-        <td></td>
-    </tr>
-</table>
-</div>
+<h3><a href="pipeline-failure/overview.md">Pipeline Failures</a> → Full Guide</h3>
+<h3><a href="artifact-missing/overview.md">Artifact Missing Errors</a> → Full Guide</h3>
+<h3><a href="runner-down/overview.md">Runner / Agent Down</a> → Full Guide</h3>
+<h3><a href="secret-expired/overview.md">Secret Expiration Issues</a> → Full Guide</h3>
+<h3><a href="deployment-rollback/overview.md">Deployment Rollback Scenarios</a> → Full Guide</h3>
 
 <hr>
 
 <h2>🛠️ Quick Commands</h2>
 <pre><code>gh run list
 gh run view &lt;run-id&gt;
-gh run watch</code></pre>
-
-<h2>📋 View Logs</h2>
-<pre><code>gh run view --log</code></pre>
-
-<h2>🔄 Re-run Workflow</h2>
-<pre><code>gh run rerun &lt;run-id&gt;
-
+gh run watch
+gh run view --log
+gh run rerun &lt;run-id&gt;
 act -j &lt;job-name&gt;</code></pre>
 
-<hr>
-
-<p>
+<p align="center">
     <a href="../README.md">← Back to Main README</a>
 </p>
 
