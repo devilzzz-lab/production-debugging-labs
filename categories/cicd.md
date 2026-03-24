@@ -46,7 +46,7 @@
 
 <hr>
 
-<h2">🛠️ Quick Commands</h2>
+<h2>🛠️ Quick Commands</h2>
 <pre><code>gh run list
 gh run view &lt;run-id&gt;
 gh run watch</code></pre>
