@@ -14,7 +14,7 @@
 
 <hr>
 
-<h2">🎥 Demo Video</h2>
+<h2>🎥 Demo Video</h2>
 <p>
     Watch the demo to understand how to use this CI/CD troubleshooting lab.
 </p>
