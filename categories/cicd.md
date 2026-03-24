@@ -49,8 +49,7 @@ gh run rerun &lt;run-id&gt;
 act -j &lt;job-name&gt;</code></pre>
 
 <p align="center">
-    <a href="../README.md">← Back to Main README</a>
-</p>
+    <a href="../"
 
 </body>
 </html>
