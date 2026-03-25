@@ -165,7 +165,7 @@ How to use Kubernetes debugging lab.
 │   ├── false-alerts/
 │   └── dashboard-broken/
 │
-├── automation/               # ⚙️ Infra automation issues    # 🔁 CI/CD failures
+├── automation/               # ⚙️ Infra automation issues  
 │   ├── terraform-state-lock/ 
 │   ├── ansible-failed/
 │   └── config-drift/
