@@ -26,17 +26,17 @@ Watch the demo to understand how to use this CI/CD troubleshooting lab.
 
 <hr>
 
-<h3><a href="aks-cluster-setup/setup.md">Azure DevOps Pipeline Setup</a> → Full Guide</h3>
+<!-- <h3><a href="aks-cluster-setup/setup.md">Azure DevOps Pipeline Setup</a> → Full Guide</h3> -->
 
 <h2>📋 Issues Covered</h2>
 
 <p><em>👆 Click issue names to jump to Full Guide</em></p>
 
-<h3><a href="/cicd/pipeline-failure/overview.md">Pipeline Failures</a> → Full Guide</h3>
-<h3><a href="/cicd/artifact-missing/overview.md">Artifact Missing Errors</a> → Full Guide</h3>
-<h3><a href="/cicd/runner-down/overview.md">Runner / Agent Down</a> → Full Guide</h3>
-<h3><a href="/cicd/secret-expired/overview.md">Secret Expiration Issues</a> → Full Guide</h3>
-<h3><a href="/cicd/deployment-rollback/overview.md">Deployment Rollback Scenarios</a> → Full Guide</h3>
+<h3><a href="/cicd/github-actions/pipeline-failure/overview.md">Pipeline Failures</a> → Full Guide</h3>
+<h3><a href="/cicd/github-actions/artifact-missing/overview.md">Artifact Missing Errors</a> → Full Guide</h3>
+<h3><a href="/cicd/github-actions/runner-down/overview.md">Runner / Agent Down</a> → Full Guide</h3>
+<h3><a href="/cicd/github-actions/secret-expired/overview.md">Secret Expiration Issues</a> → Full Guide</h3>
+<h3><a href="/cicd/github-actions/deployment-rollback/overview.md">Deployment Rollback Scenarios</a> → Full Guide</h3>
 
 <hr>
 
