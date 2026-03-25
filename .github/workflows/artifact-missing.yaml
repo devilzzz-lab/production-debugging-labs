@@ -1,7 +1,13 @@
 name: CI Pipeline Failure Demo
 
+# on:                          # Comment Out the push trigger to avoid running this workflow on every push 
+#   push:
+#     branches:                   
+#       - main
+
 on:
-  workflow_dispatch:
+  workflow_dispatch:           # This allows you to trigger the workflow manually from the GitHub Actions tab in your repository.
+                               # It won't run automatically on every push to the main branch.
 
 jobs:
   build:
