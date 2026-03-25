@@ -6,61 +6,56 @@
 </head>
 <body>
 
-<h1>📌 How I Created Pipeline Failure (npm install error)</h1>
+<h1 align="center">📌 How I Created Pipeline Failure (npm install error)</h1>
 
 <hr>
 
-<h2>1️⃣ Create GitHub Actions Workflow</h2>
+<h2>1️⃣ Comment Out GitHub Actions Workflow File</h2>
 
-<pre><code>.github/workflows/pipeline-failure.yaml</code></pre>
+<p><strong>Edit:</strong> <code>.github/workflows/pipeline-failure.yaml</code></p>
 
-<hr>
+<pre><code>command + A
+</code></pre>
 
-<h2>2️⃣ Create Application WITHOUT package.json</h2>
-
-<pre><code>cicd/pipeline-failure/index.js</code></pre>
-
-<pre><code>console.log("CI/CD Demo");</code></pre>
-
-<p><strong>Important:</strong> Do NOT create <code>package.json</code></p>
+<pre><code>command + /
+</code></pre>
 
 <hr>
 
-<h2>3️⃣ Push Code to GitHub</h2>
+<h2>2️⃣ Trigger Pipeline</h2>
 
 <pre><code>git add .
-git commit -m "trigger pipeline failure"
-git push main</code></pre>
+git commit -m "trigger pipeline failure - missing npm install"
+git push origin main</code></pre>
 
 <hr>
 
-<h2>4️⃣ Observe Pipeline Failure</h2>
+<h2>3️⃣ Observe Pipeline Failure</h2>
 
-<p>Go to <strong>GitHub → Actions</strong> and open the workflow run.</p>
+<p>Go to <strong>GitHub → Actions</strong> tab → Open latest workflow run.</p>
 
-<p><strong>Output:</strong></p>
+<p><strong>❌ Expected Error:</strong></p>
 
-<pre>Run npm install
+<pre><code>Run npm install
 npm install
 shell: /usr/bin/bash -e {0}
 npm error code ENOENT
 npm error syscall open
-npm error path /home/runner/work/production-debugging-labs/production-debugging-labs/package.json
+npm error path /home/runner/work/repo/repo/package.json
 npm error errno -2
-npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/home/runner/work/production-debugging-labs/production-debugging-labs/package.json'
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory
 npm error enoent This is related to npm not being able to find a file.
-npm error enoent
 npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-03-25T07_14_15_452Z-debug-0.log
-Error: Process completed with exit code 254.</pre>
+Error: Process completed with exit code 254.</code></pre>
 
 <hr>
 
 <h2>🔍 What's Happening?</h2>
 <ul>
-    <li><strong>Pipeline runs npm install</strong></li>
-    <li><strong>package.json is missing</strong></li>
-    <li><strong>npm cannot install dependencies</strong></li>
-    <li><strong>Pipeline fails immediately</strong></li>
+    <li><strong>Pipeline triggers successfully</strong></li>
+    <li><strong>npm install step executes</strong></li>
+    <li><strong>package.json missing</strong> ❌</li>
+    <li><strong>Exit code 254</strong> → Pipeline fails</li>
 </ul>
 
 <hr>
