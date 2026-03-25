@@ -53,8 +53,8 @@ gh run rerun &lt;run-id&gt;
 <hr>
 
 <p align="center">
-    <a href="../../categories/cicd.md">← Back to CI/CD Issues</a> | 
-    <a href="../../README.md">🏠 Back to Main README</a>
+    <a href="../../../categories/cicd.md">← Back to CI/CD Issues</a> | 
+    <a href="../../../README.md">🏠 Back to Main README</a>
 </p>
 
 </body>
