@@ -32,11 +32,11 @@ Watch the demo to understand how to use this CI/CD troubleshooting lab.
 
 <p><em>👆 Click issue names to jump to Full Guide</em></p>
 
-<h3><a href="pipeline-failure/overview.md">Pipeline Failures</a> → Full Guide</h3>
-<h3><a href="artifact-missing/overview.md">Artifact Missing Errors</a> → Full Guide</h3>
-<h3><a href="runner-down/overview.md">Runner / Agent Down</a> → Full Guide</h3>
-<h3><a href="secret-expired/overview.md">Secret Expiration Issues</a> → Full Guide</h3>
-<h3><a href="deployment-rollback/overview.md">Deployment Rollback Scenarios</a> → Full Guide</h3>
+<h3><a href="/cicd/pipeline-failure/overview.md">Pipeline Failures</a> → Full Guide</h3>
+<h3><a href="/cicd/artifact-missing/overview.md">Artifact Missing Errors</a> → Full Guide</h3>
+<h3><a href="/cicd/runner-down/overview.md">Runner / Agent Down</a> → Full Guide</h3>
+<h3><a href="/cicd/secret-expired/overview.md">Secret Expiration Issues</a> → Full Guide</h3>
+<h3><a href="/cicd/deployment-rollback/overview.md">Deployment Rollback Scenarios</a> → Full Guide</h3>
 
 <hr>
 
