@@ -30,7 +30,7 @@
 
 <pre><code>git add .
 git commit -m "trigger pipeline failure"
-git push origin main</code></pre>
+git push main</code></pre>
 
 <hr>
 
@@ -41,11 +41,17 @@ git push origin main</code></pre>
 <p><strong>Output:</strong></p>
 
 <pre>Run npm install
-npm ERR! code ENOENT
-npm ERR! syscall open
-npm ERR! path /home/runner/work/.../package.json
-npm ERR! enoent ENOENT: no such file or directory, open 'package.json'
-npm ERR! enoent This is related to npm not being able to find a file</pre>
+npm install
+shell: /usr/bin/bash -e {0}
+npm error code ENOENT
+npm error syscall open
+npm error path /home/runner/work/production-debugging-labs/production-debugging-labs/package.json
+npm error errno -2
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/home/runner/work/production-debugging-labs/production-debugging-labs/package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-03-25T07_14_15_452Z-debug-0.log
+Error: Process completed with exit code 254.</pre>
 
 <hr>
 
