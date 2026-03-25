@@ -1,1 +1,0 @@
-console.log("CI/CD Demo");

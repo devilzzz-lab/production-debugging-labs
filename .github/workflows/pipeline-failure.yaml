@@ -19,7 +19,9 @@ jobs:
           node-version: '18'
 
       - name: Install Dependencies
+        working-directory: cicd/github-actions/pipeline-failure
         run: npm install
 
       - name: Run App
-        run: node cicd/pipeline-failure/index.js
+        working-directory: cicd/github-actions/pipeline-failure
+        run: node index.js

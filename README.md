@@ -150,11 +150,14 @@ How to use Kubernetes debugging lab.
 │       ├── sql-latency/
 │       └── storage-full/
 │
-├── cicd/                     # 🔁 CI/CD failures
-│   ├── pipeline-fail/
-│   ├── artifact-missing/
-│   ├── runner-down/
-│   └── secret-expired/
+├── cicd
+│   └── github-actions        # 🔁 CI/CD failures
+│       └── pipeline-failure
+│           ├── creation.md
+│           ├── debug-steps.md
+│           ├── fix.md
+│           ├── index.js
+│           └── overview.md
 │
 ├── monitoring/               # 📊 Observability issues
 │   ├── alert-fatigue/
@@ -162,8 +165,8 @@ How to use Kubernetes debugging lab.
 │   ├── false-alerts/
 │   └── dashboard-broken/
 │
-├── automation/               # ⚙️ Infra automation issues
-│   ├── terraform-state-lock/
+├── automation/               # ⚙️ Infra automation issues    # 🔁 CI/CD failures
+│   ├── terraform-state-lock/ 
 │   ├── ansible-failed/
 │   └── config-drift/
 │
