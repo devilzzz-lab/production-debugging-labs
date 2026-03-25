@@ -44,16 +44,9 @@
 
 <h2>🚀 Quick Actions</h2>
 <pre>
-# View workflow runs
 gh run list
-
-# Inspect a specific run
 gh run view &lt;run-id&gt;
-
-# View logs
 gh run view --log
-
-# Re-run failed workflow
 gh run rerun &lt;run-id&gt;
 </pre>
 
