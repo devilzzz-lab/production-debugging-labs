@@ -24,7 +24,7 @@
 
 <ul>
 <li>✅ Kubernetes Troubleshooting (10 Issues)</li>
-<li>🔄 CI/CD Failures (Coming Next)</li>
+<li>🔄 CI/CD Failures (In P)</li>
 <li>🔄 Cloud Production Incidents</li>
 <li>🔄 Monitoring Failures</li>
 <li>🔄 Automation Issues</li>
