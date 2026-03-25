@@ -12,40 +12,13 @@
 
 <h2>1️⃣ Create GitHub Actions Workflow</h2>
 
-<pre><code>.github/workflows/ci-cd.yaml</code></pre>
-
-<pre><code>name: CI Pipeline Failure Demo
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Run App
-        run: node index.js
-</code></pre>
+<pre><code>.github/workflows/pipeline-failure.yaml</code></pre>
 
 <hr>
 
 <h2>2️⃣ Create Application WITHOUT package.json</h2>
 
-<pre><code>index.js</code></pre>
+<pre><code>cicd/pipeline-failure/index.js</code></pre>
 
 <pre><code>console.log("CI/CD Demo");</code></pre>
 

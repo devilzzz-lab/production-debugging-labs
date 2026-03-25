@@ -1,24 +1,25 @@
-name: Pipeline Failure - npm error
+name: CI Pipeline Failure Demo
 
 on:
   push:
-    paths:
-      - 'cicd/pipeline-failure/**'
-  workflow_dispatch:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '18'
 
-      - name: Install (will fail)
+      - name: Install Dependencies
         run: npm install
 
-      - name: Run app
-        run: node cicd/pipeline-failure/index.js
+      - name: Run App
+        run: node index.js
