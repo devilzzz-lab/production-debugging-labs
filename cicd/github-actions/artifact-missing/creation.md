@@ -17,7 +17,7 @@
 <pre><code># ❌ Remove or comment this section
 
 - name: Upload Artifact
-  uses: actions/upload-artifact@v3
+  uses: actions/upload-artifact@v4
   with:
     name: app-build
     path: dist/
@@ -28,7 +28,7 @@
 <h2>2️⃣ Keep Download Step in Deploy Stage</h2>
 
 <pre><code>- name: Download Artifact
-  uses: actions/download-artifact@v3
+  uses: actions/download-artifact@v4
   with:
     name: app-build   # ❌ This artifact will not exist
 </code></pre>

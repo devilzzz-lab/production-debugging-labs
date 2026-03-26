@@ -1,12 +1,12 @@
 name: Artifact Missing Demo
 
-# on:                          # 👉 This allows manual trigger from GitHub Actions tab
-#   workflow_dispatch:         # 👉 Disabled now (using push trigger instead)
+on:                          # 👉 This allows manual trigger from GitHub Actions tab
+  workflow_dispatch:         # 👉 Disabled now (using push trigger instead)
                         
-on:
-  push:
-    branches:
-      - main   # 👉 Runs automatically on push to main
+# on:
+#   push:
+#     branches:
+#       - main   # 👉 Runs automatically on push to main
 
 jobs:
   build:
@@ -26,11 +26,11 @@ jobs:
       # 👉 This is the root cause of failure
       # 👉 Deploy stage will expect artifact, but it won't exist
       #
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: app-build
-          path: dist/
+      # - name: Upload Artifact
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: app-build
+      #     path: dist/
 
   deploy:
     needs: build   # ✅ Ensures build runs first
