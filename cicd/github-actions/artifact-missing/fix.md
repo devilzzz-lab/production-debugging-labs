@@ -112,10 +112,6 @@ git push origin main
 Build Stage → Upload Artifact → Deploy Stage → Download Artifact → Success ✔
 </pre>
 
-<hr>
-
-<h2>✅ Next Steps</h2>
-<p><a href="overview.md">📦 Back to Artifact Missing →</a></p>
 
 <hr>
 

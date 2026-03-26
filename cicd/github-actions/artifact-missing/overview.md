@@ -50,16 +50,6 @@ gh run view --log
 gh run rerun &lt;run-id&gt;
 </pre>
 
-<hr>
-
-<h2>🧠 Common Causes</h2>
-<ul>
-    <li>❌ Artifact not uploaded in build stage</li>
-    <li>❌ Artifact name mismatch between upload and download</li>
-    <li>❌ Incorrect file path specified</li>
-    <li>❌ Missing stage dependency (needs)</li>
-    <li>❌ Artifact expired or deleted</li>
-</ul>
 
 <hr>
 
