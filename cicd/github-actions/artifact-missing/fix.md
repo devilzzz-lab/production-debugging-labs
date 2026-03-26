@@ -10,24 +10,28 @@
 
 <hr>
 
-<h2>1️⃣ Identify Missing Artifact Upload</h2>
-<pre>Check build stage in workflow file</pre>
-
-<pre>
-✔ Build step exists
-❌ Upload Artifact step missing
-</pre>
-
-<p><strong>Fix:</strong> Add artifact upload step</p>
+<p><strong>Root Cause:</strong> Artifact upload step is missing in build stage</p>
 
 <hr>
 
-<h2>2️⃣ Add Upload Artifact Step</h2>
+<h2>1️⃣ Enable Artifact Upload Step</h2>
 <pre>Edit: .github/workflows/artifact-missing.yaml</pre>
+
+<p>Go to the file and locate the commented section:</p>
+
+<pre>
+# - name: Upload Artifact
+#   uses: actions/upload-artifact@v4
+#   with:
+#     name: app-build
+#     path: dist/
+</pre>
+
+<p><strong>Fix:</strong> Uncomment this section using <code>command + /</code></p>
 
 <pre>
 - name: Upload Artifact
-  uses: actions/upload-artifact@v3
+  uses: actions/upload-artifact@v4
   with:
     name: app-build
     path: dist/
@@ -35,13 +39,13 @@
 
 <hr>
 
-<h2>3️⃣ Ensure Artifact Name Matches</h2>
+<h2>3️⃣ Verify Artifact Name Consistency</h2>
 
 <pre>
-# Upload
+# Upload step
 name: app-build
 
-# Download
+# Download step
 name: app-build   ✔ must match exactly
 </pre>
 
@@ -49,34 +53,18 @@ name: app-build   ✔ must match exactly
 
 <hr>
 
-<h2>4️⃣ Verify Artifact Path</h2>
-
-<pre>
-path: dist/
-</pre>
-
-<p><strong>Check:</strong></p>
-
-<pre>
-ls dist/
-</pre>
-
-<p><strong>Fix:</strong> Ensure files exist before upload</p>
-
-<hr>
-
-<h2>5️⃣ Validate Job Dependency</h2>
+<h2>4️⃣ Ensure Job Dependency</h2>
 
 <pre>
 deploy:
   needs: build
 </pre>
 
-<p><strong>Reason:</strong> Deploy must wait for build to complete</p>
+<p><strong>Reason:</strong> Deploy must wait for build stage to complete</p>
 
 <hr>
 
-<h2>6️⃣ Re-run Pipeline</h2>
+<h2>5️⃣ Re-run Pipeline</h2>
 
 <pre>
 git add .
@@ -99,9 +87,9 @@ git push origin main
 <h2>🎯 Root Cause Summary</h2>
 
 <ul>
-    <li><strong>Artifact not uploaded</strong> in build stage ❌</li>
+    <li><strong>Artifact upload step was missing</strong> in build stage ❌</li>
     <li><strong>Deploy stage expected artifact</strong></li>
-    <li><strong>Mismatch caused failure</strong></li>
+    <li><strong>Pipeline failed due to missing artifact flow</strong></li>
 </ul>
 
 <hr>
@@ -112,6 +100,14 @@ git push origin main
 Build Stage → Upload Artifact → Deploy Stage → Download Artifact → Success ✔
 </pre>
 
+<hr>
+
+<h2>🧠 Key Insight</h2>
+
+<p>
+Build stage success does NOT guarantee artifact availability.<br>
+Artifacts must be explicitly uploaded to be used in later stages.
+</p>
 
 <hr>
 
