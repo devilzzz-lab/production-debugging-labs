@@ -43,24 +43,6 @@ git push origin main</code></pre>
 
 <hr>
 
-<h2>🔍 What's Happening?</h2>
-<ul>
-    <li><strong>Pipeline triggers successfully</strong></li>
-    <li><strong>Build stage runs</strong></li>
-    <li><strong>No artifact is uploaded</strong> ❌</li>
-    <li><strong>Deploy stage tries to download artifact</strong></li>
-    <li><strong>Artifact not found error</strong> → Pipeline fails</li>
-</ul>
-
-<hr>
-
-<h2>💥 Expected Error</h2>
-
-<pre><code>Artifact not found for name: app-build
-</code></pre>
-
-<hr>
-
 <h2>✅ Next Steps</h2>
 <p><a href="debug-steps.md">🔍 How I Debug It →</a></p>
 

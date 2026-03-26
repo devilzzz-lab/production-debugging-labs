@@ -1,14 +1,12 @@
 name: Artifact Missing Demo
 
+on:                          # 👉 This allows manual trigger from GitHub Actions tab
+  workflow_dispatch:         # 👉 Disabled now (using push trigger instead)
+                        
 # on:
-#   workflow_dispatch:
-#   👉 This allows manual trigger from GitHub Actions tab
-#   👉 Disabled now (using push trigger instead)
-
-on:
-  push:
-    branches:
-      - main   # 👉 Runs automatically on push to main
+#   push:
+#     branches:
+#       - main   # 👉 Runs automatically on push to main
 
 jobs:
   build:

@@ -11,33 +11,56 @@
 <hr>
 
 <h2>1️⃣ Check Workflow Status</h2>
-<pre>Go to GitHub → Actions → Select Workflow</pre>
+<pre>Go to GitHub → Actions → Select Artifact Missing Demo Workflow</pre>
 
 <pre>
-Artifact Missing Demo
+Latest Run:
+trigger artifact missing issue
 ❌ Failed
 </pre>
 
-<h2>2️⃣ Identify Failed Step</h2>
-<p>Open the workflow run and expand steps.</p>
+<hr>
+
+<h2>2️⃣ Identify Failed Job</h2>
+<p>Open the workflow run.</p>
 
 <pre>
-✔ Checkout Code
-✔ Build Application
+✔ build job → SUCCESS
+❌ deploy job → FAILED
+</pre>
+
+<p><strong>🧠 Important Insight:</strong> Pipeline does not fail in build stage.  
+Failure happens only in deploy stage.</p>
+
+<hr>
+
+<h2>3️⃣ Identify Failed Step</h2>
+<p>Expand the <strong>deploy job</strong></p>
+
+<pre>
+✔ Set up job
 ❌ <strong>Download Artifact</strong>
 </pre>
 
-<h2>3️⃣ Check Error Logs</h2>
+<hr>
+
+<h2>4️⃣ Check Error Logs</h2>
 <pre>Click on failed step → View logs</pre>
 
 <pre>
-Run actions/download-artifact@v3
-Error: Artifact not found for name: app-build
+Run actions/download-artifact@v4
+Downloading single artifact
+Error: Unable to download artifact(s): Artifact not found for name: app-build
+Please ensure that your artifact is not expired and the artifact was uploaded using a compatible version.
 Error: Process completed with exit code 1.
 </pre>
 
-<h2>4️⃣ Verify Build Stage Output</h2>
-<pre>Check build job logs</pre>
+<p><strong>Observation:</strong> Deploy stage is trying to download an artifact that does not exist</p>
+
+<hr>
+
+<h2>5️⃣ Verify Build Stage Output</h2>
+<pre>Go to build job → Check logs</pre>
 
 <pre>
 ✔ Build step executed
@@ -45,45 +68,66 @@ Error: Process completed with exit code 1.
 ❌ No artifact upload step found
 </pre>
 
-<p><strong>Observation:</strong> Artifact was never uploaded</p>
+<p><strong>🧠 Important Insight:</strong>  
+Build stage is successful, but success does NOT mean artifact is available.</p>
 
-<h2>5️⃣ Validate Workflow Configuration</h2>
+<hr>
+
+<h2>6️⃣ Validate Workflow Configuration</h2>
 <pre>Check workflow file (.github/workflows/artifact-missing.yaml)</pre>
 
 <pre>
 # ❌ Missing this step
 
 - name: Upload Artifact
-  uses: actions/upload-artifact@v3
+  uses: actions/upload-artifact@v4
+  with:
+    name: app-build
+    path: dist/
 </pre>
 
-<p><strong>Issue:</strong> Deploy stage expects artifact but build never uploaded it</p>
+<p><strong>Issue:</strong> Build stage never uploads artifact</p>
 
-<h2>6️⃣ Check Artifact Name Consistency</h2>
+<hr>
+
+<h2>7️⃣ Check Artifact Name Consistency</h2>
 
 <pre>
-# Download step
+# Deploy step expects
 name: app-build
 </pre>
 
-<p><strong>Check:</strong> Does upload step use same name?</p>
+<p><strong>Check:</strong> Is same name used in upload step?</p>
 
 <pre>
-❌ No matching upload step found
+❌ No upload step → No artifact exists
 </pre>
 
-<h2>7️⃣ Confirm Root Cause</h2>
+<hr>
+
+<h2>8️⃣ Confirm Root Cause</h2>
 <pre>
 Error: Artifact not found
-Meaning: Expected file was never created or uploaded
+Meaning: Expected artifact was never uploaded
 </pre>
 
 <p><strong>🔍 Key Findings:</strong></p>
 <ul>
-    <li><strong>Artifact upload missing:</strong> No upload step in build stage</li>
-    <li><strong>Download step failed:</strong> Artifact does not exist</li>
-    <li><strong>Pipeline stopped:</strong> Deploy stage failed</li>
+    <li><strong>Build succeeded:</strong> But no artifact uploaded ❌</li>
+    <li><strong>Deploy failed:</strong> Artifact not found ❌</li>
+    <li><strong>Pipeline broke:</strong> Due to missing artifact flow ❌</li>
 </ul>
+
+<hr>
+
+<h2>🎯 Final Understanding</h2>
+
+<pre>
+Build Stage → (No Upload) → Deploy Stage → Download Fails ❌
+</pre>
+
+<p><strong>🧠 Key Insight:</strong>  
+Pipeline success in one stage does not guarantee data availability in next stage.</p>
 
 <hr>
 
