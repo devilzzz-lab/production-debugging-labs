@@ -1,14 +1,14 @@
 name: Artifact Missing Demo
 
 # on:
-#   workflow_dispatch:           # This allows you to trigger the workflow manually from the GitHub Actions tab in your repository.
-#                                # It won't run automatically on every push to the main branch.
-
+#   workflow_dispatch:
+#   👉 This allows manual trigger from GitHub Actions tab
+#   👉 Disabled now (using push trigger instead)
 
 on:
   push:
     branches:
-      - main
+      - main   # 👉 Runs automatically on push to main
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4   # ✅ Updated to latest version
 
       - name: Build Application
         run: |
@@ -25,21 +25,24 @@ jobs:
           echo "Hello World" > dist/app.txt
 
       # ❌ INTENTIONALLY NOT uploading artifact
+      # 👉 This is the root cause of failure
+      # 👉 Deploy stage will expect artifact, but it won't exist
+      #
       # - name: Upload Artifact
-      #   uses: actions/upload-artifact@v3
+      #   uses: actions/upload-artifact@v4
       #   with:
       #     name: app-build
       #     path: dist/
 
   deploy:
-    needs: build
+    needs: build   # ✅ Ensures build runs first
     runs-on: ubuntu-latest
 
     steps:
       - name: Download Artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4   # ✅ FIXED (v3 deprecated)
         with:
-          name: app-build   # ❌ This will fail (artifact doesn't exist)
+          name: app-build   # ❌ This artifact does not exist
 
       - name: Deploy Step
         run: echo "Deploying application..."
