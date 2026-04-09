@@ -8,7 +8,7 @@
 
 <h1 align="center">My DevOps Lab</h1>
 <h3 align="center">50+ Real Production Issues & Solutions</h3>
-<h3 align="center">Progress: 10 Kubernetes & 2 CICD Issues Completed</h3>
+<h3 align="center">Progress: 10 Kubernetes & 3 CICD Issues Completed</h3>
 
 <p align="center">
 <img src="https://img.shields.io/github/stars/devilzzz-lab/production-debugging-labs?style=social">
