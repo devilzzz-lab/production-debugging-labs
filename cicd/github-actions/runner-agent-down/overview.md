@@ -46,28 +46,10 @@
 <pre>
 # Check runners
 gh api repos/{owner}/{repo}/actions/runners
-
-# View workflow runs
 gh run list
-
-# Inspect run
 gh run view &lt;run-id&gt;
-
-# View logs
 gh run view --log
-
-# Re-run pipeline
 gh run rerun &lt;run-id&gt;
-</pre>
-
-<hr>
-
-<h2>⚠️ Common Errors</h2>
-<pre>
-No runner available
-Runner is offline
-Waiting for a runner to pick up this job
-Job stuck in queue
 </pre>
 
 <hr>
