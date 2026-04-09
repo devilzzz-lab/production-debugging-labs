@@ -8,7 +8,7 @@
 
 <h1 align="center">My DevOps Lab</h1>
 <h3 align="center">50+ Real Production Issues & Solutions</h3>
-<h3 align="center">Progress: 10 Kubernetes Issues Completed</h3>
+<h3 align="center">Progress: 10 Kubernetes & 2 CICD Issues Completed</h3>
 
 <p align="center">
 <img src="https://img.shields.io/github/stars/devilzzz-lab/production-debugging-labs?style=social">
@@ -24,7 +24,7 @@
 
 <ul>
 <li>✅ Kubernetes Troubleshooting (10 Issues)</li>
-<li>🔄 CI/CD Failures (In P)</li>
+<li>🔄 CI/CD Failures (In Progress)</li>
 <li>🔄 Cloud Production Incidents</li>
 <li>🔄 Monitoring Failures</li>
 <li>🔄 Automation Issues</li>
