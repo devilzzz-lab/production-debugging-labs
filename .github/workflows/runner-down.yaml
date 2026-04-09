@@ -1,4 +1,4 @@
-name: CI Pipeline Failure Demo
+name: Runner Down Demo
 
 # on:                          # Comment Out the push trigger to avoid running this workflow on every push 
 #   push:
@@ -10,20 +10,18 @@ on:
                                # It won't run automatically on every push to the main branch.
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  runner-check:
+    runs-on: self-hosted   #  Requires your runner
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
+      - name: Print Message
+        run: echo "Runner is working fine 🚀"
 
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Run App
-        run: node cicd/pipeline-failure/index.js
+      - name: Simulate Work
+        run: |
+          echo "Running job..."
+          sleep 5
+          echo "Done!"
