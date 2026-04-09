@@ -35,7 +35,7 @@ Watch the demo to understand how to use this CI/CD troubleshooting lab.
 <h3><a href="/cicd/github-actions/pipeline-failure/overview.md">Pipeline Failures</a> → Full Guide</h3>
 <h3><a href="/cicd/github-actions/artifact-missing/overview.md">Artifact Missing Errors</a> → Full Guide</h3>
 <h3><a href="/cicd/github-actions/runner-agent-down/overview.md">Runner Agent Down</a> → Full Guide</h3>
-<h3><a href="/cicd/github-actions/secret-expired/overview.md">Secret Expiration Issues</a> → Full Guide</h3>
+<h3><a href="/cicd/github-actions/secret-expiration/overview.md">Secret Expiration Issues</a> → Full Guide</h3>
 <h3><a href="/cicd/github-actions/deployment-rollback/overview.md">Deployment Rollback Scenarios</a> → Full Guide</h3>
 
 <hr>
