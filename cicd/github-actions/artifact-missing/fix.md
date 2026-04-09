@@ -113,7 +113,7 @@ Artifacts must be explicitly uploaded to be used in later stages.
 
 <p align="center">
     <a href="overview.md">← Back to Artifact Missing</a> | 
-    <a href="../../categories/cicd.md">🏠 CI/CD Issues</a>
+    <a href="../../../categories/cicd.md">🏠 CI/CD Issues</a>
 </p>
 
 </body>

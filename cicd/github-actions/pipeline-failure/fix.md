@@ -84,7 +84,7 @@ gh run view --log                  ← Check logs</pre>
 <p align="center">
   <a href="overview.md">← Back to Overview</a> | 
   <a href="debug-steps.md">🔍 Debug Steps</a> | 
-  <a href="../../categories/cicd.md">🏠 CI/CD Issues</a>
+  <a href="../../../categories/cicd.md">🏠 CI/CD Issues</a>
 </p>
 
 </body>
