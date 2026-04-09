@@ -138,7 +138,7 @@ Pipeline success in one stage does not guarantee data availability in next stage
 
 <p align="center">
     <a href="overview.md">← Back to Artifact Missing</a> | 
-    <a href="../../categories/cicd.md">🏠 CI/CD Issues</a>
+    <a href="../../../categories/cicd.md">🏠 CI/CD Issues</a>
 </p>
 
 </body>

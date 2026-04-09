@@ -89,7 +89,7 @@ Meaning: Required file does not exist
 
 <p align="center">
     <a href="overview.md">← Back to Pipeline Failure</a> | 
-    <a href="../../categories/cicd.md">🏠 CI/CD Issues</a>
+    <a href="../../../categories/cicd.md">🏠 CI/CD Issues</a>
 </p>
 
 </body>
