@@ -1,63 +1,103 @@
-# ✅ Fix: Runner / Agent Down
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-## 🔧 Fix 1: Restart Runner
+<h1>✅ How to Fix Runner / Agent Down</h1>
+<hr>
 
-### GitHub Runner
+<h2>1️⃣ Fix: Start Runner Service</h2>
 
-```bash
-./svc.sh start
-```
+<p><strong>GitHub Self-Hosted Runner:</strong></p>
 
-### GitLab Runner
+<pre>cd actions-runner
+./svc.sh start</pre>
 
-```bash
-sudo systemctl restart gitlab-runner
-```
+<p><strong>GitLab Runner:</strong></p>
 
----
+<pre>sudo systemctl start gitlab-runner</pre>
 
-## 🔧 Fix 2: Re-register Runner
+<p><strong>Problem Before:</strong></p>
+<pre>
+Runner is offline
+No runner available
+Job stuck in queue
+</pre>
 
-```bash
+<p><strong>After Fix:</strong></p>
+<pre>
+Runner is online
+Job picked by runner
+</pre>
+
+<hr>
+
+<h2>2️⃣ Ensure Auto-Start on Boot</h2>
+
+<pre>sudo systemctl enable gitlab-runner</pre>
+
+<p><strong>Why:</strong> Prevent runner from going down after system restart</p>
+
+<hr>
+
+<h2>3️⃣ (Optional) Re-register Runner</h2>
+
+<pre>cd actions-runner
 ./config.sh remove
-./config.sh
-```
+./config.sh</pre>
 
----
+<p><strong>Use Case:</strong> Token expired or runner misconfigured</p>
 
-## 🔧 Fix 3: Fix Network
+<hr>
 
-```bash
-sudo systemctl restart networking
-```
+<h2>4️⃣ Restart System (if needed)</h2>
 
----
+<pre>sudo reboot</pre>
 
-## 🔧 Fix 4: Ensure Auto Start
+<hr>
 
-```bash
-sudo systemctl enable gitlab-runner
-```
+<h2>5️⃣ Verify Pipeline Success</h2>
 
----
+<p>Go to <strong>GitHub → Actions</strong></p>
 
-## 🔧 Fix 5: Increase Resources
+<pre>
+✔ Workflow triggered
+✔ Runner assigned
+✔ Job started
+✔ Steps executing
 
-* Add CPU/RAM
-* Clean disk space
+✅ <strong>Pipeline Running Successfully</strong>
+</pre>
 
----
+<hr>
 
-## 🔧 Fix 6: Restart Machine
+<h2>🧠 What Fixed It?</h2>
 
-```bash
-sudo reboot
-```
+<ul>
+    <li>❌ <strong>Runner stopped:</strong> No execution environment available</li>
+    <li>✅ <strong>Runner started:</strong> Jobs can now be executed</li>
+    <li>⏳ <strong>Pipeline resumed:</strong> Jobs picked from queue</li>
+    <li>✅ <strong>Execution successful:</strong> CI/CD flow restored</li>
+</ul>
 
----
+<pre><strong>Key Commands Used:</strong>
+./svc.sh start                     ← Start GitHub runner
+sudo systemctl start gitlab-runner ← Start GitLab runner
+sudo systemctl enable gitlab-runner← Enable auto-start
+./config.sh                       ← Re-register runner
+gh run list                       ← View runs
+gh run rerun &lt;run-id&gt;             ← Re-run pipeline</pre>
 
-## 🎯 Final Verification
+<hr>
 
-* Runner status = ✅ Online
-* Pipeline executes successfully
-* Jobs no longer stuck
+<p align="center">
+  <a href="overview.md">← Back to Overview</a> | 
+  <a href="debug-steps.md">🔍 Debug Steps</a> | 
+  <a href="../../../categories/cicd.md">🏠 CI/CD Issues</a>
+</p>
+
+</body>
+</html>

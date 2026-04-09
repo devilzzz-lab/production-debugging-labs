@@ -1,40 +1,81 @@
-# 🚨 Runner / Agent Down Issue
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-## 📌 What is this issue?
+<h1>🔴 Runner / Agent Down</h1>
 
-In CI/CD pipelines, a **runner (GitHub Actions) or agent (Jenkins, GitLab Runner, Azure Agent)** is responsible for executing jobs.
+<p align="center">
+    <img src="https://img.shields.io/badge/Status-Offline-ff4444?logo=githubactions&logoColor=white" alt="Runner Down">
+</p>
 
-Sometimes, pipelines fail with errors like:
+<hr>
 
-* "No runner available"
-* "Runner is offline"
-* "Job stuck in queue"
+<h3>🚨 Issue Summary</h3>
+<p><strong>Issue:</strong> CI/CD pipeline is stuck because no runner/agent is available to execute jobs</p>
+<p><strong>Impact:</strong> Jobs remain in queue, builds do not start, deployment is blocked</p>
 
-## ⚠️ Symptoms
+<hr>
 
-* Pipeline stuck in **pending state**
-* Jobs not getting picked
-* Runner shows **offline/inactive**
-* Sudden pipeline failures without code issues
+<h2>📂 All Resources</h2>
 
-## 🎯 Root Cause
+<p><em>👆 Click below to explore the complete debugging journey</em></p>
 
-Common causes include:
+<table border="1" cellpadding="12" cellspacing="0">
+    <tr>
+        <td>
+            <strong><a href="creation.md">📌 How I Created Issue</a></strong>
+        </td>
+        <td>
+            <strong><a href="debug-steps.md">🔍 How I Debug It</a></strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong><a href="fix.md">✅ How I Fixed It</a></strong>
+        </td>
+    </tr>
+</table>
 
-* Runner service stopped
-* Network connectivity issues
-* Authentication/token expired
-* Machine shutdown/crash
-* Resource exhaustion (CPU/RAM)
+<hr>
 
-## 🧠 Why this matters
+<h2>🚀 Quick Actions</h2>
+<pre>
+# Check runners
+gh api repos/{owner}/{repo}/actions/runners
 
-Without a runner:
+# View workflow runs
+gh run list
 
-* CI/CD pipelines cannot execute
-* Deployments are blocked
-* Entire DevOps workflow stops
+# Inspect run
+gh run view &lt;run-id&gt;
 
-## 🏁 Goal
+# View logs
+gh run view --log
 
-Diagnose why the runner is down and restore it to **active state**
+# Re-run pipeline
+gh run rerun &lt;run-id&gt;
+</pre>
+
+<hr>
+
+<h2>⚠️ Common Errors</h2>
+<pre>
+No runner available
+Runner is offline
+Waiting for a runner to pick up this job
+Job stuck in queue
+</pre>
+
+<hr>
+
+<p align="center">
+    <a href="../../../categories/cicd.md">← Back to CI/CD Issues</a> | 
+    <a href="../../../README.md">🏠 Back to Main README</a>
+</p>
+
+</body>
+</html>
