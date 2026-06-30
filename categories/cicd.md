@@ -21,7 +21,7 @@ Watch the demo to understand how to use this CI/CD troubleshooting lab.
 </p>
 
 <p>
-<a href="https://drive.google.com/file/d/1Wu8nrNgYVkOb3IbIK87uR-LXwov6zIwJ/view?usp=sharing">▶ Watch Demo Video</a>
+<a href="#">▶ Watch Demo Video</a>
 </p>
 
 <hr>
