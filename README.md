@@ -24,8 +24,8 @@
 
 <ul>
 <li>✅ Kubernetes Troubleshooting (10 Issues)</li>
-<li>🔄 CI/CD Failures (In Progress)</li>
-<li>🔄 Cloud Production Incidents</li>
+<li>✅ CI/CD Failures</li>
+<li>⏳ Cloud Production Incidents ( Azure InProgress )</li>
 <li>🔄 Monitoring Failures</li>
 <li>🔄 Automation Issues</li>
 <li>🔄 SRE Incidents</li>
